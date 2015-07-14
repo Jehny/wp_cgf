@@ -2,7 +2,17 @@
 <?php
 if(isset($_POST['newsletter'])){
 
+	// Inserir dados na tabela Paciente
+	$table = 'newsletter';
+
+	$data_news = array('email'=> $_POST['email_mark']);
+
+	if($wpdb->insert( $table, $data_news, $format )){
+		$teste = "<input type='hidden' id='enviado' />";
+		$message = "Obrigado por se cadastrar para receber novidades da CGF!";
+	}
 }
+
 if(isset($_POST['enviar_contato'])){
 		$to = 'cgfjuridico@cgfjuridico.com.br';
 		$nome = $_POST['nome'];
@@ -20,22 +30,24 @@ if(isset($_POST['enviar_contato'])){
 		$message .= "</table>";
 		$message .= "</body></html>";
 
-
 		if($email != "" && $message != "" && $nome != ""){
-			if(wp_mail( $to, $subject,  $message, $headers)){
-				$sucesso = "<div class='sucesso alert alert-info'>
-					<button type='button' class='close' data-dismiss='alert'>×</button>
-					<h4>Sucesso!</h4>
-					<p>Seu e-mail foi enviado com sucesso. </p>
-					</div>";
-				
-			}
+			
+			/*if(wp_mail( $to, $subject,  $message, $headers)){*/
+				// $sucesso = "<div class='sucesso alert-info'>
+				// 	<button type='button' class='close' data-dismiss='alert'>×</button>
+				// 	<h4>Sucesso!</h4>
+				// 	<p>Seu e-mail foi enviado com sucesso. </p>
+				// 	</div>";
+				$teste = "<input type='hidden' id='enviado' />";
+				$message = "Seu e-mail foi enviado com sucesso!";
+			//}
 		}
+	}
+
+	
 		// else{
 		// 	echo $nome . ", " . ", ". $email . ", ". $message;
 		// }
-		
-	}
 ?>
 
 <!DOCTYPE html>
@@ -50,13 +62,14 @@ if(isset($_POST['enviar_contato'])){
 	<title>CGF Jurídico</title>
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/ico_logo.png" />
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/ico_logo.png" type="image/x-icon" />
-	<link rel="icon" type="image/ico" href="<?php bloginfo('template_url'); ?>/img/ico_logo.pngs" />
+	<link rel="icon" type="image/ico" href="<?php bloginfo('template_url'); ?>/img/ico_logo.png" />
 </head>
 <body>
 
 	<div class="content">
-		<img src="<?php bloginfo('template_url'); ?>/img/balanca.png" class="balanca">
-		<section class="container-fluid">
+		
+		<section class="container-fluid texto_header">
+			<img src="<?php bloginfo('template_url'); ?>/img/balanca.png" class="balanca">
 			<div class="logo row-fluid">
 				<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
 			</div>
@@ -72,13 +85,15 @@ if(isset($_POST['enviar_contato'])){
 				</p>
 			</div>
 		</section>
-
-		<div class="rodape">
+		<?php if(isset($teste)){
+			echo $teste;
+			} ?>
+		<div class="rodape" id="fale_conosco">
 			
 			<div class="row-fluid email_marketing">
 				<form action="" method="post">
-					<input type="text" name="email_mark" placeholder="Escreva seu email para ser notificado quando houver novidades">
-					<button type="submit" name="newsletter" class="btn btn-cgf">Enviar</button>
+					<input type="email" name="email_mark" placeholder="Escreva seu email para ser notificado quando houver novidades" required>
+					<button type="submit" name="newsletter" class="btn btn-cgf" data-target="#myModal">Enviar</button>
 				</form>
 			</div>
 			<div class="row-fluid sobre_rede">
@@ -86,7 +101,7 @@ if(isset($_POST['enviar_contato'])){
 					<h1>Sobre a CGF Jurídico</h1>
 					<p>Com mais de dez anos de atuação, o escritório CGF Jurídico vem crescendo ao longo desses anos, ganhando prestígio e credibilidade, destacando-se pelo comprometimento com a defesa dos interesses dos nossos clientes. </p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 rede">
 					<h1>Redes Sociais CGF</h1>
 					<ul class="list-inline">
 						<li><a href="https://www.facebook.com/pages/CGF-Advocacia/819206698125044?fref=ts"><img src="<?php bloginfo('template_url'); ?>/img/face.png"></a></li>
@@ -96,30 +111,38 @@ if(isset($_POST['enviar_contato'])){
 				</div>
 				<div class="col-md-5">
 					<h1>Entre em contato</h1>
-					<form action="" method="post" id="contato">
-						<?php
-						if(isset($sucesso)){
-							echo $sucesso; 
-						} ?>
-
-						<div class="alert alert-block alert-error fade in">
-							<button type="button" class="close">×</button>
-							<h4 class="alert-heading">Campo vazio!</h4>
-							<p>Todos os campos devem ser preenchidos.</p>
-						</div>
-						<div><input type="text" name="nome" placeholder="Nome"></div>
-						<div><input type="text" name="email" placeholder="E-mail"></div>
-						<div><textarea name="mensagem" cols="40" rows="5" placeholder="Mensagem"></textarea></div>
-						<button class="btn btn-cgf" type="submit" name="enviar_contato">Enviar</button>
+					<form action="#fale_conosco" method="POST" id="contato">
+						<div><input type="text" name="nome" placeholder="Nome" required></div>
+						<div><input type="email" name="email" placeholder="E-mail" required></div>
+						<div><textarea name="mensagem" cols="20" rows="3" placeholder="Mensagem" required></textarea></div>
+						<button class="btn btn-cgf" type="submit" name="enviar_contato" id="enviar_contato">Enviar</button>
 					</form>
 				</div>
 			</div>
 			
 			<div class="row-fluid texto_rodape">
-				<p>Av. Desembargador Moreira, 1701 - Aldeota Fortaleza - CE - Brasil Tel: (85) 3474- 6888 </p>			
+				<p>Av. Desembargador Moreira, 1701 - Aldeota Fortaleza - CE - Brasil Tel: <a href="tel:08534746888">(85) 3474- 6888</a> </p>			
 			</div>
 		</div>
 
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Sucesso!</h4>
+	      </div>
+	      <div class="modal-body">
+	        <?php if(isset($message)){ echo $message; } ?>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-cgf" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 
 </body>
