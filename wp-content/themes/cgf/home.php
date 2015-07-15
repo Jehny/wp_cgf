@@ -143,7 +143,7 @@ if(isset($_POST['enviar_contato'])){
 	        <?php if(isset($message)){ echo $message; } ?>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-cgf" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-cgf" data-dismiss="modal">Fechar</button>
 	      </div>
 	    </div>
 	  </div>
