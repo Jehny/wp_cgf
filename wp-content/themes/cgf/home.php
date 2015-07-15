@@ -53,8 +53,12 @@ if(isset($_POST['enviar_contato'])){
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" type="text/css"/>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/cgf.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/medias.css" type="text/css" />
 
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery-2.1.4.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
@@ -69,15 +73,15 @@ if(isset($_POST['enviar_contato'])){
 	<div class="content">
 		
 		<section class="container-fluid texto_header">
-			<img src="<?php bloginfo('template_url'); ?>/img/balanca.png" class="balanca">
+			<img src="<?php bloginfo('template_url'); ?>/img/balanca.png" class="balanca img-responsive">
 			<div class="logo row-fluid">
-				<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
+				<a href="#"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" class="img-responsive"></a>
 			</div>
 			<div class="row-fluid texto">
-				<h1>Site em construção</h1>
+				<h1 class="col-xs-12 col-sm-12 col-md-12">Site em construção</h1>
 			</div>
 			<div class="row-fluid texto">
-				<p class="col">
+				<p class="col-xs-12 col-sm-12 col-md-10">
 					NÓS ESTAMOS TRABALHANDO EM UM MARAVILHOSO SITE. FIQUE ATENTO! 
 					POR FAVOR, NÃO ESQUEÇA DE NOS 
 					<span>ACOMPANHAR ATRAVÉS DO FACEBOOK</span> 
@@ -88,7 +92,7 @@ if(isset($_POST['enviar_contato'])){
 		<?php if(isset($teste)){
 			echo $teste;
 			} ?>
-		<div class="rodape" id="fale_conosco">
+		<div class="rodape row-fluid" id="fale_conosco">
 			
 			<div class="row-fluid email_marketing">
 				<form action="" method="post">
@@ -97,11 +101,11 @@ if(isset($_POST['enviar_contato'])){
 				</form>
 			</div>
 			<div class="row-fluid sobre_rede">
-				<div class="col-md-4">
+				<div class="col-xs-12 col-sm-12 col-md-4">
 					<h1>Sobre a CGF Jurídico</h1>
 					<p>Com mais de dez anos de atuação, o escritório CGF Jurídico vem crescendo ao longo desses anos, ganhando prestígio e credibilidade, destacando-se pelo comprometimento com a defesa dos interesses dos nossos clientes. </p>
 				</div>
-				<div class="col-md-3 rede">
+				<div class="col-xs-12 col-sm-12 col-md-3 rede">
 					<h1>Redes Sociais CGF</h1>
 					<ul class="list-inline">
 						<li><a href="https://www.facebook.com/pages/CGF-Advocacia/819206698125044?fref=ts"><img src="<?php bloginfo('template_url'); ?>/img/face.png"></a></li>
@@ -109,7 +113,7 @@ if(isset($_POST['enviar_contato'])){
 						<li><a href="https://plus.google.com/105365906703965528203/about"><img src="<?php bloginfo('template_url'); ?>/img/gplus.png"></a></li>
 					</ul>
 				</div>
-				<div class="col-md-5">
+				<div class="col-xs-12 col-sm-12 col-md-5">
 					<h1>Entre em contato</h1>
 					<form action="#fale_conosco" method="POST" id="contato">
 						<div><input type="text" name="nome" placeholder="Nome" required></div>
