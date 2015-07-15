@@ -1,0 +1,44 @@
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (max-width: 768px) {
+	.logo img {  width: 32%;}
+  	.texto h1 {   font-size: 2em; }
+  	.texto p {    width: 90%;   font-size: 1.6em;}
+  	.sobre_rede p { width: 100%; font-size: 1em;}
+  	.rodape h1 { font-weight: bold;   font-size: 1.5em;}
+  	.rede ul li a img { width: 100%; }
+
+  	.texto_header .balanca{ display: none;}
+  	.email_marketing {padding: 15px;}
+  	.email_marketing form {  width: 100%;}
+  	#contato {  margin-bottom: 3%;}
+  	#contato input {  height: 50px; font-size: 14px;}
+  	#contato textarea {height: 120px;}
+  	.texto_rodape{}
+}
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (min-width: 992px) {
+	/*.texto h1 {}
+	.texto p {}
+	.rodape h1 { font-weight: bold;   font-size: 1.6em;}
+  	.rede ul li a img { width: 100%;}
+  	.sobre_rede {}
+  	.sobre_rede p {font-size: 1.3em;}
+  	#contato {  width: 90%;}
+  	#contato input {  height: 30px; font-size: 14px;}
+  	#contato textarea {height: 90px;}
+  	.rodape p {font-size: 16px;}*/
+}
+
+/* 
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+@media screen and (min-width: 1200px) {
+  	/*.texto h1 {}
+  	.texto p {}
+  	.sobre_rede{}*/
+}
