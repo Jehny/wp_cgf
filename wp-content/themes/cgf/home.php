@@ -125,7 +125,7 @@ if(isset($_POST['enviar_contato'])){
 			</div>
 			
 			<div class="row-fluid texto_rodape">
-				<p>Av. Desembargador Moreira, 1701 - Aldeota Fortaleza - CE - Brasil Tel: <a href="tel:08534746888">(85) 3474- 6888</a> </p>			
+				<p>Av. Desembargador Moreira, 1701 - Aldeota Fortaleza - CE - Brasil Tel: <a href="tel:08534746888">(85) 3047- 8500</a> </p>			
 			</div>
 		</div>
 
