@@ -32,7 +32,7 @@ if(isset($_POST['enviar_contato'])){
 
 		if($email != "" && $message != "" && $nome != ""){
 			
-			/*if(wp_mail( $to, $subject,  $message, $headers)){*/
+			// if(wp_mail( $to, $subject,  $message, $headers)){
 				// $sucesso = "<div class='sucesso alert-info'>
 				// 	<button type='button' class='close' data-dismiss='alert'>×</button>
 				// 	<h4>Sucesso!</h4>
@@ -40,7 +40,7 @@ if(isset($_POST['enviar_contato'])){
 				// 	</div>";
 				$teste = "<input type='hidden' id='enviado' />";
 				$message = "Seu e-mail foi enviado com sucesso!";
-			//}
+			// }
 		}
 	}
 
@@ -57,8 +57,7 @@ if(isset($_POST['enviar_contato'])){
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" type="text/css"/>
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/cgf.css" type="text/css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/medias.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/manutencao.css" type="text/css" />
 
 	<script src="<?php bloginfo('template_url'); ?>/js/jquery-2.1.4.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>

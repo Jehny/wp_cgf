@@ -1,0 +1,266 @@
+/* Manutenção tela */
+.content {
+  background: url(../img/bg.png) repeat;
+}
+
+.texto_header {
+  position: relative;
+}
+
+
+.texto_header .balanca{
+  position: absolute;
+  right: 0;
+  width: 23.5%;
+  bottom: 0;
+}
+
+.logo {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+}
+
+.logo img {
+  width: 27%;
+}
+
+.texto {
+  padding-left: 3%;
+
+}
+
+.texto h1 {
+  text-transform: uppercase;
+  color: #9A0E1C;
+  font-size: 24px;
+}
+
+.texto p {
+   padding-top: 2%;
+   width: 45%;
+   font-size: 14px;
+   padding-bottom: 3%;
+   color: #6A6A6C;
+}
+
+.texto p span {
+  color: #990C1A;
+}
+
+.email_marketing {
+  background: #CF2934;
+  padding: 5px;
+  text-align: center;
+}
+
+.email_marketing input {
+  margin: auto;
+  height: 26px;
+  width: 72%;
+  padding-left: 2%;
+}
+
+.email_marketing .btn-cgf {
+  padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.email_marketing form {
+  background: #D9404B;
+  padding: 5px;
+  width: 50%;
+  margin: auto;
+}
+
+.rodape {
+  background: #9A0E1C;
+}
+
+.rodape h1 {
+  font-size: 20px;
+}
+
+.rodape p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.rodape h1, p {
+  color: white;
+}
+
+.sobre_rede {
+  color: white;
+  background: #9A0E1C;
+  overflow: hidden;
+  padding-left: 3%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.sobre_rede p {
+  width: 76%;
+}
+
+.texto_rodape {
+  color: white;
+  background: #CF2934;
+  text-align: center;
+    padding: 13px;
+}
+
+.texto_rodape p a, .texto_rodape p a:hover {
+  color: white;
+}
+
+.rede ul li a img {
+  width: 76%;
+}
+
+#contato {
+  background: #CF2934;
+  padding: 3px;
+  width: 70%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#contato input {
+  margin-bottom: 2%;
+  width: 91.6%;
+  height: 26px;
+  padding-left: 1%;
+  color: black;
+}
+
+#contato textarea {
+  padding-left: 1%;
+  width: 91.6%;
+  color: black; 
+  margin-bottom: 1%;
+}
+
+
+.btn-cgf {
+  color: #fff;
+    background-color: #9A0E1C;
+    border-color: #9A0E1C;
+    padding-left: 7%;
+    padding-right: 7%;
+} 
+
+.btn-cgf:focus,
+.btn-cgf.focus {
+  color: #fff;
+  background-color: #9A0E1C;
+  border-color: #9A0E1C;
+}
+.btn-cgf:hover {
+  color: #fff;
+  background-color: #9A0E1C;
+  border-color: #9A0E1C;
+}
+
+.alert {
+  display: none;
+  margin-left: 0%;
+  background: #fcf8e3;
+  border: 1px solid #faebcc;
+  color: #8a6d3b;
+  width: 50%;
+  padding: 1%;
+}
+
+.sucesso {
+  background-color: white;
+  color: rgb(207, 41, 52);
+  padding: 2% 4%;
+  border-radius: 5px;
+  width: 92%;
+  margin-bottom: 2%;
+  border: 1px solid rgb(154, 14, 28);
+}
+
+.sucesso h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sucesso p {
+  color: rgb(154, 14, 28);
+  font-size: 11.5px;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: rgb(226, 226, 226);
+   font-size:12px;
+}
+
+:-moz-placeholder {
+   color: rgb(226, 226, 226);
+   font-size: 12px;
+}
+
+::-moz-placeholder {
+   color: rgb(226, 226, 226);  
+   font-size: 12px;
+}
+
+:-ms-input-placeholder {  
+   color: rgb(226, 226, 226);  
+   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+	.logo img {  width: 70%;}
+  	.texto h1 {   font-size: 2em; }
+  	.texto p {    width: 90%;   font-size: 1em;}
+  	.sobre_rede p { width: 100%; font-size: 1em;}
+  	.rodape h1 { font-weight: bold;   font-size: 1.5em;}
+  	.rodape p {font-size: 12px;}
+  	.rede ul li a img { width: 100%; }
+
+  	.texto_header .balanca{ display: none;}
+  	.email_marketing {padding: 15px;}
+  	.email_marketing form {  width: 100%;}
+  	#contato {  margin-bottom: 3%;   width: 90%;}
+  	#contato input {  height: 30px; font-size: 14px;}
+  	#contato textarea {height: 80px;}
+  	.texto_rodape{}
+}
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (max-width: 992px) {
+	.texto h1 {  font-size: 24px !important;}
+	.texto p {font-size: 1em !important; width: 90% !important;}
+	.rodape h1 { }
+  	.rede ul li a img {}
+  	.sobre_rede {}
+  	.sobre_rede p   {font-size: 15px !important;}
+  	#contato {}
+  	#contato input {}
+  	#contato textarea {}
+  	.rodape p {}
+}
+
+/* 
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+@media screen and (max-width: 1200px) {
+  	.texto h1 {  font-size: 26px;}
+	.texto p  { font-size: 1.5em; width: 70%;}
+	.rodape h1 {font-weight: bold; font-size: 22px;}
+  	.rede ul li a img {}
+  	.sobre_rede {}
+  	.sobre_rede p {  font-size: 17px;}
+  	#contato {  width: 90%;}
+  	#contato input {}
+  	#contato textarea {}
+  	.rodape p {}
+}
