@@ -35,7 +35,31 @@
 						      	</button>
 						      	<a class="navbar-brand logo_img" href="#"><img src="<?php bloginfo('template_url'); ?>/img/logo_home.png" class="img-responsive"></a>
 						    </div>
-						    <div class="collapse navbar-collapse col-md-6 link_menu" id="bs-example-navbar-collapse-1">
+						    <?php
+
+						    $defaults = array(
+						    	'theme_location'  => '',
+						    	'menu'            => '',
+						    	'container'       => 'div',
+						    	'container_class' => 'collapse navbar-collapse col-md-6 link_menu',
+						    	'container_id'    => 'bs-example-navbar-collapse-1',
+						    	'menu_class'      => 'menu',
+						    	'menu_id'         => '',
+						    	'echo'            => true,
+						    	'fallback_cb'     => 'wp_page_menu',
+						    	'before'          => '',
+						    	'after'           => '',
+						    	'link_before'     => '',
+						    	'link_after'      => '',
+						    	'items_wrap'      => '<ul id="%1$s" class="nav navbar-nav">%3$s</ul>',
+						    	'depth'           => 0,
+						    	'walker'          => ''
+						    );
+
+						    wp_nav_menu( $defaults );
+
+						    ?>
+						   <!--  <div class="collapse navbar-collapse col-md-6 link_menu" id="bs-example-navbar-collapse-1">
 					        	<ul class="nav navbar-nav">
 						            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
 						            <li><a href="#">Sobre</a></li>
@@ -44,7 +68,7 @@
 					            	<li><a href="#">Fale Conosco</a></li>
 					            	
 					          	</ul>
-					        </div>
+					        </div> -->
 		                  	<div class="col-md-2">
 		        				<ul class="list-inline redes_sociais">
 		        					<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/face_ico.png" class="img-responsive"></a></li>
@@ -54,7 +78,9 @@
 						</div>
 						
 					</nav>
+					
 				</section>
+				
 			</div>
 
 			

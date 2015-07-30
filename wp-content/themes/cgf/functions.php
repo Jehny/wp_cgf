@@ -1,12 +1,40 @@
 <?php
 register_nav_menu( 'main-menu', __( 'Main Menu' ) );
 
+/**
+ * Criando uma area de widgets
+ *
+ */
+function widgets_novos_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Rodape',
+		'id' => 'rodape_widgets',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+add_action( 'widgets_init', 'widgets_novos_widgets_init' );
+
+
+
 add_theme_support( 'post-thumbnails' );
 
 add_action( 'init', 'banners_post_type' );
 
 add_post_type_support('banners', 'thumbnail');
 
+add_action( 'init', 'blog_post_type' );
+
+$supports = array('title', 'editor','thumbnail', 'excerpt', 'custom-fields', 'comments', 'revisions', 'author', 'post-formats', 'page-attributes');
+
+add_post_type_support('blog', $supports);
+
+add_action( 'init', 'servico_home_post_type' );
+
+add_post_type_support('servico_home', $supports);
 
 function banners_post_type() {
 	register_post_type( 'banners',
@@ -14,6 +42,32 @@ function banners_post_type() {
 					'labels' => array(
 							'name' => __( 'Banners' ),
 							'singular_name' => __( 'Banner' )
+					),
+					'public' => true,
+					'has_archive' => true,
+			)
+	);
+}
+
+function blog_post_type() {
+	register_post_type( 'blog',
+			array(
+					'labels' => array(
+							'name' => __( 'Blog' ),
+							'singular_name' => __( 'Blog' )
+					),
+					'public' => true,
+					'has_archive' => true,
+			)
+	);
+}
+
+function servico_home_post_type() {
+	register_post_type( 'servico_home',
+			array(
+					'labels' => array(
+							'name' => __( 'Servico Home' ),
+							'singular_name' => __( 'Servico Home' )
 					),
 					'public' => true,
 					'has_archive' => true,
