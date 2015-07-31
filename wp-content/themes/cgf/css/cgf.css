@@ -28,6 +28,11 @@ body {
   margin-bottom: 0;
 }
 
+.cabecalho .navbar-default .navbar-nav > li > a {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
 .cabecalho .navbar-brand {
 	height: 80px;
 }
@@ -35,11 +40,18 @@ body {
 .cabecalho .nav > li {
 	margin-top: 4%;
 	font-size: 16px;
+	border-right: 1px solid; 
+}
+
+.cabecalho .nav > li:last-child{
+	border-right: none; 
 }
 
 .cabecalho .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #C52534;
   	background-color: white;
+  	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .cabecalho .link_menu {
@@ -175,7 +187,7 @@ body {
 
 footer {
 	background: #C52534;
-	border-bottom: 2px solid #666666;
+	border-bottom: 10px solid #666666;
 	margin-top: 15%;
 	text-align: center;
 	color: white;
@@ -187,9 +199,18 @@ footer .menu_footer {
 	width: 34%;
 }
 
+footer .menu_footer li {
+	border-right: 1px solid;
+}
+
 footer .menu_footer li a {
 	color: white;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
 
+footer .menu_footer li:last-child {
+	border-right: none;
 }
 
 footer .menu_footer li .active > a, 
@@ -197,10 +218,16 @@ footer .menu_footer li a:hover,
 footer .menu_footer li a:focus {
 	background: #C52534;
 	background-color: #C52534 !important;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 footer .endereco {
-	
+	margin-top: 2%;
+}
+
+footer .endereco a, footer .endereco a:hover {
+	color: white;
 }
 
 footer #menu-footer {

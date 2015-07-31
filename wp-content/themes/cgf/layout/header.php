@@ -69,10 +69,23 @@
 					            	
 					          	</ul>
 					        </div> -->
+
+
 		                  	<div class="col-md-2">
 		        				<ul class="list-inline redes_sociais">
-		        					<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/face_ico.png" class="img-responsive"></a></li>
-		        					<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/twitter_ico.png" class="img-responsive"></a></li>
+									<?php
+										$redes = get_posts('post_type=redes_sociais');
+										$facebook = "";
+										$gplus = "";
+										$in = "";
+										foreach ($redes as $rede) {
+											$facebook = get_field('facebook', $rede->ID);
+											$gplus = get_field('google_plus', $rede->ID);
+											$in = get_field('linkedin', $rede->ID);
+										 } 
+									?>
+		        					<li><a href="<?php echo $facebook; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/face_ico.png" class="img-responsive"></a></li>
+		        					<li><a href="<?php echo $gplus; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_ico.png" class="img-responsive"></a></li>
 		        				</ul>
 		        			</div>
 						</div>

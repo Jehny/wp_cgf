@@ -1,6 +1,33 @@
 <?php
 register_nav_menu( 'main-menu', __( 'Main Menu' ) );
 
+add_action( 'widgets_init', 'twitter_widgets_init' );
+add_action( 'widgets_init', 'face_widgets_init' );
+add_action( 'widgets_init', 'plus_widgets_init' );
+add_action( 'widgets_init', 'in_widgets_init' );
+
+add_theme_support( 'post-thumbnails' );
+
+add_action( 'init', 'banners_post_type' );
+
+add_post_type_support('banners', 'thumbnail');
+
+add_action( 'init', 'quem_somos_post_type' );
+
+add_post_type_support('quem_somos', 'thumbnail');
+
+add_action( 'init', 'blog_post_type' );
+
+$supports = array('title', 'editor','thumbnail', 'excerpt', 'custom-fields', 'comments', 'revisions', 'author', 'post-formats', 'page-attributes');
+
+add_post_type_support('blog', $supports);
+
+add_action( 'init', 'servico_home_post_type' );
+add_action( 'init', 'redes_sociais' );
+
+add_post_type_support('servico_home', $supports);
+
+
 /**
  * Criando uma area de widgets
  *
@@ -18,23 +45,58 @@ function widgets_novos_widgets_init() {
 }
 add_action( 'widgets_init', 'widgets_novos_widgets_init' );
 
+/**
+ * Widget redes sociais
+ *
+ */
+function twitter_widgets_init() {
 
+	register_sidebar( array(
+		'name' => 'Twitter',
+		'id' => 'twitter',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
 
-add_theme_support( 'post-thumbnails' );
+function face_widgets_init() {
 
-add_action( 'init', 'banners_post_type' );
+	register_sidebar( array(
+		'name' => 'Facebook',
+		'id' => 'facebook',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
 
-add_post_type_support('banners', 'thumbnail');
+function plus_widgets_init() {
 
-add_action( 'init', 'blog_post_type' );
+	register_sidebar( array(
+		'name' => 'Google+',
+		'id' => 'plus',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
 
-$supports = array('title', 'editor','thumbnail', 'excerpt', 'custom-fields', 'comments', 'revisions', 'author', 'post-formats', 'page-attributes');
+function in_widgets_init() {
 
-add_post_type_support('blog', $supports);
+	register_sidebar( array(
+		'name' => 'Linkedin',
+		'id' => 'linkedin',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
 
-add_action( 'init', 'servico_home_post_type' );
-
-add_post_type_support('servico_home', $supports);
 
 function banners_post_type() {
 	register_post_type( 'banners',
@@ -49,12 +111,39 @@ function banners_post_type() {
 	);
 }
 
+function quem_somos_post_type() {
+	register_post_type( 'quem_somos',
+			array(
+					'labels' => array(
+							'name' => __( 'Quem Somos' ),
+							'singular_name' => __( 'Quem Somos' )
+					),
+					'public' => true,
+					'has_archive' => true,
+			)
+	);
+}
+
+
 function blog_post_type() {
 	register_post_type( 'blog',
 			array(
 					'labels' => array(
 							'name' => __( 'Blog' ),
 							'singular_name' => __( 'Blog' )
+					),
+					'public' => true,
+					'has_archive' => true,
+			)
+	);
+}
+
+function redes_sociais() {
+	register_post_type( 'redes_sociais',
+			array(
+					'labels' => array(
+							'name' => __( 'Redes Sociais' ),
+							'singular_name' => __( 'Redes Sociais' )
 					),
 					'public' => true,
 					'has_archive' => true,

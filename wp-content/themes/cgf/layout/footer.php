@@ -27,10 +27,8 @@
 			</div>
 			<div class="endereco">
 				<?php 
-					wp_widget_description('rodape_widgets');
-					//if ( dynamic_sidebar('rodape_widgets') ) {
-						//wp_widget_description('rodape_widgets');
-					//} 
+					
+					if ( dynamic_sidebar('rodape_widgets') ) : else : endif;
 				?>
 			</div>
 		</footer>
