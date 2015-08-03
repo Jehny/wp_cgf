@@ -176,6 +176,7 @@ body {
 
 .imagem_footer {
 	position: relative;
+	margin-bottom: 15%;
 }
 
 .imagem_footer img {
@@ -188,7 +189,6 @@ body {
 footer {
 	background: #C52534;
 	border-bottom: 10px solid #666666;
-	margin-top: 15%;
 	text-align: center;
 	color: white;
 }

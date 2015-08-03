@@ -12,10 +12,6 @@ add_action( 'init', 'banners_post_type' );
 
 add_post_type_support('banners', 'thumbnail');
 
-add_action( 'init', 'quem_somos_post_type' );
-
-add_post_type_support('quem_somos', 'thumbnail');
-
 add_action( 'init', 'blog_post_type' );
 
 $supports = array('title', 'editor','thumbnail', 'excerpt', 'custom-fields', 'comments', 'revisions', 'author', 'post-formats', 'page-attributes');
@@ -110,20 +106,6 @@ function banners_post_type() {
 			)
 	);
 }
-
-function quem_somos_post_type() {
-	register_post_type( 'quem_somos',
-			array(
-					'labels' => array(
-							'name' => __( 'Quem Somos' ),
-							'singular_name' => __( 'Quem Somos' )
-					),
-					'public' => true,
-					'has_archive' => true,
-			)
-	);
-}
-
 
 function blog_post_type() {
 	register_post_type( 'blog',

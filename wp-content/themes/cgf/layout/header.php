@@ -4,6 +4,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" type="text/css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/cgf.css" type="text/css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/quem_somos.css" type="text/css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/servicos.css" type="text/css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/medias.css" type="text/css" />
 		
 		<script src="<?php bloginfo('template_url'); ?>/js/jquery-2.1.4.min.js"></script>
