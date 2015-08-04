@@ -1,10 +1,11 @@
 <?php
 register_nav_menu( 'main-menu', __( 'Main Menu' ) );
-
+add_action( 'widgets_init', 'widgets_novos_widgets_init' );
 add_action( 'widgets_init', 'twitter_widgets_init' );
 add_action( 'widgets_init', 'face_widgets_init' );
 add_action( 'widgets_init', 'plus_widgets_init' );
 add_action( 'widgets_init', 'in_widgets_init' );
+add_action( 'widgets_init', 'feed_facebook_widgets_init' );
 
 add_theme_support( 'post-thumbnails' );
 
@@ -39,7 +40,6 @@ function widgets_novos_widgets_init() {
 		'after_title' => '',
 	) );
 }
-add_action( 'widgets_init', 'widgets_novos_widgets_init' );
 
 /**
  * Widget redes sociais
@@ -86,6 +86,22 @@ function in_widgets_init() {
 	register_sidebar( array(
 		'name' => 'Linkedin',
 		'id' => 'linkedin',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+
+/**
+ * Widget Feed de notícia no Facebook
+ *
+ */
+function feed_facebook_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Feed Facebook',
+		'id' => 'feed_facebook',
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '',

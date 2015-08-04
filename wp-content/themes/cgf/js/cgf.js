@@ -20,5 +20,8 @@ $(document).ready(function(){
     if($('#enviado').length){
          $('#myModal').modal('toggle');
     }
+
+    $('#submit').addClass('btn');
+    $('#submit').addClass('btn-vermelho');
    
 });

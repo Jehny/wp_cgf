@@ -34,7 +34,7 @@
 		?>
 					<div class="secoes row-fluid">
 					  	<p class="titulo"><?php echo $secao_titulo; ?></p>
-					  	<p class="descricao"><?php echo $descricao; ?></p>
+					  	<div class="descricao"><?php echo $descricao; ?></div>
 					  </div>
 		<?php	
 				$i++;

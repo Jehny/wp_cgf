@@ -77,13 +77,13 @@ body {
 	width: 100%;
 }
 
-#sobre {
+#sobre_home {
 	color: #3F3F3F;
 	text-align: center;
 	padding: 2% 4%;
 }
 
-#sobre .corpo { 
+#sobre_home .corpo { 
 	width: 80%;
 	margin: auto;
 	font-size: 18px;

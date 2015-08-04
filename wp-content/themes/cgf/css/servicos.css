@@ -1,0 +1,65 @@
+#servicos {
+	font-family: 'myriad_pro';
+	text-align: center;
+	background: url('../img/bg_quem_somos.png');
+	padding-bottom: 3%;
+}
+
+#servicos h1 {
+	color: #BE1319;
+	padding-top: 4%;
+}
+
+#servicos h2 {
+	color: #081831;
+	font-size: 18px;
+}
+
+#servicos .secoes {
+	padding: 3% 3%;
+	border-bottom: 1px solid #CACACA;
+}
+
+#servicos .secoes:last-child {
+	border-bottom: none;
+}
+
+#servicos .secoes .titulo{
+	color: #BE1319;
+	font-size: 18px;
+	padding-bottom: 2%;
+}
+
+#servicos .secoes .descricao {
+	color: #444444;
+	text-align: left;
+}
+
+#servicos .separador {
+
+}
+
+#servicos .separador img {
+	
+}
+
+#servicos .separador .linhas {
+	height: 60px;
+	padding: 0;
+	width: 47.75%;
+}
+
+#servicos .separador .linhas img {
+	width: 100%;
+	margin-top: 5.5%;
+}
+
+#servicos .separador .meio {
+	height: 60px;
+	width: 4.5%;
+	padding: 0;
+}	
+
+#servicos .separador .meio img {
+
+}

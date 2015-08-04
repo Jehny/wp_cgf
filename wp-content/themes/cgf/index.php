@@ -49,7 +49,7 @@
 	
 	<!-- Seção de sobre a CGF - o conteúdo está na página criada no WP -->
 	<section class="container-fluid">
-		<div id="sobre">
+		<div id="sobre_home">
 			<h1 class="titulo_sessao">CGF Jurídico</h1>
 			<h2 class="subtitulo">Veja como podemos ajudar a trazer resultados</h2>
 

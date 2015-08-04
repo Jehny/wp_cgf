@@ -1,0 +1,82 @@
+#sobre {
+	background: url('../img/bg_quem_somos.png');
+	font-family: 'myriad_pro';
+	text-align: center;
+}
+
+#sobre h1 {
+	font-family: 'myriad_pro';
+	color: #BE1319;
+	padding-top: 3%;
+}
+
+#sobre h2 {
+	font-family: 'myriad_pro';
+	font-size: 18px;
+}
+
+#sobre .empresa {
+	overflow: hidden;
+	font-family: 'myriad_pro';
+
+}
+
+#sobre .empresa .titulo_empresa {
+	color: #BE1319;
+	font-size: 20px;
+}
+
+#sobre .empresa .sobre {
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 2%;
+}
+
+#sobre .funcionarios {
+	overflow: hidden;
+}
+
+#sobre .funcionarios .coluna {
+	padding: 2% 4% 4% 4%;
+}
+
+#sobre .funcionarios .foto {
+	background: white;
+
+}
+
+#sobre .funcionarios .foto img {
+	border-radius: 100px;
+	width: 57%;
+	padding: 3%;
+}
+
+
+#sobre .funcionarios .nome {
+	color: #BE1319;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+#sobre .funcionarios .descricao {
+	
+}
+
+#sobre .funcionarios .atuacao {
+	
+}
+
+#sobre .funcionarios .atividade {
+	
+}
+
+#sobre .funcionarios .email a {
+	color: #BE1319;
+	text-decoration: underline;
+}
+
+#sobre .funcionarios .email a:hover {
+	color: #BE1319;
+	text-decoration: underline;
+}
+
