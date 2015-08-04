@@ -162,7 +162,6 @@ function servico_home_post_type() {
 	);
 }
 
-
 // Custom WordPress Login Logo
 function my_login_logo() { ?>
 	<style>

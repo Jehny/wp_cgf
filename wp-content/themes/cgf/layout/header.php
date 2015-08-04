@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/quem_somos.css" type="text/css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/servicos.css" type="text/css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/blog.css" type="text/css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/fale_conosco.css" type="text/css" />
 		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/medias.css" type="text/css" />
 		
 		<script src="<?php bloginfo('template_url'); ?>/js/jquery-2.1.4.min.js"></script>
