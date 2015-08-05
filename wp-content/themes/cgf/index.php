@@ -58,13 +58,13 @@
 			<h2 class="subtitulo">Veja como podemos ajudar a trazer resultados</h2>
 
 			<div class="separador row-fluid">
-				<div class="col-md-4">
+				<div class="col-xs-4 col-sm-4 col-md-4">
 					<img src="<?php bloginfo('template_url'); ?>/img/separador_esq.png" class="img-responsive">
 				</div> 
-				<div class="col-md-4">
+				<div class="col-xs-4 col-sm-4 col-md-4">
 					X 
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4 col-sm-4 col-md-4">
 					<img src="<?php bloginfo('template_url'); ?>/img/separador_dir.png" class="img-responsive">
 				</div>
 			</div>
@@ -105,13 +105,13 @@
 		<h1 class="titulo_sessao">Notícias e Notas</h1>
 		<h2 class="subtitulo">Acompanhe todas as notícias e notas sobre o mundo do direito</h2>
 		<div class="separador row-fluid">
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_esq.png" class="img-responsive">
 			</div> 
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4">
 				X 
 			</div>
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_dir.png" class="img-responsive">
 			</div>
 		</div>
@@ -122,12 +122,12 @@
 				 while (have_posts()) {
 				 	the_post();  
 		?>
-			<div class="col-md-3">
-				<div class="col-md-2 data">
+			<div class="col-xs-12 col-sm-6 col-md-3 item">
+				<div class="col-xs-2 col-sm-2 col-md-2 data">
 					<p class="dia"><?php the_time('d'); ?></p>
 					<p class="mes"><?php the_time('M'); ?></p>
 				</div>
-				<div class="texto col-md-10">
+				<div class="texto col-xs-10 col-sm-10 col-md-10">
 					<h1 class="titulo_noticia_item"><?php the_title(); ?></h1>
 					<?php if (has_excerpt() ) { ?>
 							<p class="resumo_noticia_item" ><?php the_excerpt(); ?></p>
@@ -144,7 +144,7 @@
 		</div>
 		
 		<div class="div_btn row-fluid">
-			<a href="<?php echo esc_url(get_permalink(get_page_by_title('Noticias' ))); ?>" class="btn btn-preto">Veja  mais notícias e notas</a>
+			<a href="<?php echo esc_url(get_permalink(get_page_by_title('Noticias'))); ?>" class="btn btn-preto">Veja  mais notícias e notas</a>
 		</div>
 	</section>
 
@@ -153,13 +153,13 @@
 		<h1 class="titulo_sessao">Conheça nossos serviços</h1>
 		<h2 class="subtitulo">Parcerias sólidas para seus resultados serem sempre o melhor</h2>
 		<div class="separador row-fluid">
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_esq.png" class="img-responsive">
 			</div> 
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4">
 				X 
 			</div>
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_dir.png" class="img-responsive">
 			</div>
 		</div>
@@ -189,7 +189,7 @@
 				foreach ($servicos_home as $servico_item){
 					
 				?>
-					<div class="col-md-4 servicos_home_item">
+					<div class="col-xs-12 col-sm-12 col-md-4 servicos_home_item">
 						<div class="icone">
 							<img alt="" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($servico_item->ID)); ?>" class="img-responsive">
 						</div>
@@ -212,7 +212,7 @@
 
 	</section>
 	<div class="imagem_footer">
-		<img src="<?php bloginfo('template_url'); ?>/img/direito_balanca.png">
+		<img src="<?php bloginfo('template_url'); ?>/img/direito_balanca.png" class="img-responsive">
 	</div>
 
 <?php

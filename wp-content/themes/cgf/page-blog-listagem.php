@@ -49,7 +49,7 @@
 				<div class="busca">
 					<form action="" method="POST">
 						<input type="text" placeholder="Buscar...">
-						<button type="submit" name="busca"><img src="<?php bloginfo('template_url'); ?>/img/lupa.png"></button>
+						<button type="submit" name="busca"><img src="<?php bloginfo('template_url'); ?>/img/lupa.png" class="img-responsive"></button>
 					</form>
 				</div>
 				<div class="posts_anteriores">

@@ -29,14 +29,8 @@
 			<div class="cabecalho">
 				<section class="container-fluid">
 					<nav class="navbar navbar-default">
-						<div class="container-fluid">
-							<div class="navbar-header col-md-4">
-						     	<button type="button" class="navbar-toggle collapsed buttom_toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							        <span class="sr-only">Toggle navigation</span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-						      	</button>
+						<div class="">
+							<div class="navbar-header col-xs-6 col-sm-4 col-md-4">
 						      	<a class="navbar-brand logo_img" href="#"><img src="<?php bloginfo('template_url'); ?>/img/logo_home.png" class="img-responsive"></a>
 						    </div>
 						    <?php
@@ -45,7 +39,7 @@
 						    	'theme_location'  => '',
 						    	'menu'            => '',
 						    	'container'       => 'div',
-						    	'container_class' => 'collapse navbar-collapse col-md-6 link_menu',
+						    	'container_class' => 'collapse navbar-collapse col-xs-6 col-sm-6 col-md-6 link_menu',
 						    	'container_id'    => 'bs-example-navbar-collapse-1',
 						    	'menu_class'      => 'menu',
 						    	'menu_id'         => '',
@@ -63,19 +57,7 @@
 						    wp_nav_menu( $defaults );
 
 						    ?>
-						   <!--  <div class="collapse navbar-collapse col-md-6 link_menu" id="bs-example-navbar-collapse-1">
-					        	<ul class="nav navbar-nav">
-						            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-						            <li><a href="#">Sobre</a></li>
-					            	<li><a href="#">Serviço</a></li>
-					            	<li><a href="#">Blog</a></li>
-					            	<li><a href="#">Fale Conosco</a></li>
-					            	
-					          	</ul>
-					        </div> -->
-
-
-		                  	<div class="col-md-2">
+		                  	<div class="col-xs-6 col-sm-2 col-md-2 div_redes">
 		        				<ul class="list-inline redes_sociais">
 									<?php
 										$redes = get_posts('post_type=redes_sociais');
@@ -91,7 +73,14 @@
 		        					<li><a href="<?php echo $facebook; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/face_ico.png" class="img-responsive"></a></li>
 		        					<li><a href="<?php echo $gplus; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_ico.png" class="img-responsive"></a></li>
 		        				</ul>
+	        			     	<button type="button" class="navbar-toggle collapsed buttom_toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        				        <span class="sr-only">Toggle navigation</span>
+	        				        <span class="icon-bar"></span>
+	        				        <span class="icon-bar"></span>
+	        				        <span class="icon-bar"></span>
+	        			      	</button>
 		        			</div>
+
 						</div>
 						
 					</nav>

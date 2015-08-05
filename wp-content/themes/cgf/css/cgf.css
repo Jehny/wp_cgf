@@ -85,30 +85,30 @@ body {
 
 #slider .carousel-control.left {
 	left: 46.1%;
-    height: 55px;
+    height: 45px;
     border-right: 1px solid #DDDDDD;
     background-color: white;
-    top: 90%;
     border-top-left-radius: 50px;
 }
 
 #slider .carousel-control.left span img {
-	margin-top: 48%;
-	margin-left: 43%;
+	margin: 33% auto
 }
 
 #slider .carousel-control.right {
 	right: 46%;
-    height: 55px;
-    top: 90%;
+    height: 45px;
     background: white;
     border-top-right-radius: 50px;
 }
 
 #slider .carousel-control.right span img {
-	margin-top: 27px;
-	margin-right: 10px;
+	margin: 33% auto
 
+}
+
+.glyphicon {
+	margin-top: 20%;
 }
 
 #slider .controle_left {
@@ -238,7 +238,7 @@ footer {
 footer .menu_footer {
 	overflow: auto;
 	margin: auto;
-	width: 34%;
+	width: 35%;
 }
 
 footer .menu_footer li {

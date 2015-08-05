@@ -43,30 +43,30 @@
 	<h2>Nesta página você poderá  conhecer um  pouco mias sobre nós</h2>
 	<div class="row-fluid empresa">
 		<div class="separador row-fluid">
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4 img_sep">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_esq.png" class="img-responsive">
 			</div> 
-			<div class="col-md-4">
+			<div class="col-xs-12 col-sm-12 col-md-4">
 				A empresa
 			</div>
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4 img_sep">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_dir.png" class="img-responsive">
 			</div>
 		</div>
-		<div class="col-md-6 sobre">
+		<div class="col-xs-12 col-sm-12 col-md-6 sobre">
 			<?php echo $sobre; ?>
 		</div>
-		<div class="col-md-6 sobre">
+		<div class="col-xs-12 col-sm-12 col-md-6 sobre">
 			<div class="col-md-12">
 				<p class="titulo_empresa"><?php echo $titulo_missao; ?></p>
 				
 				<p><?php echo $missao; ?></p>
 			</div>
-			<div class="col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12">
 				<p class="titulo_empresa"><?php echo $titulo_visao; ?></p>
 				<p><?php echo $visao; ?></p>
 			</div>
-			<div class="col-md-12">
+			<div class="col-xs-12 col-sm-12 col-md-12">
 				<p class="titulo_empresa"><?php echo $titulo_valores; ?></p>
 				<p><?php echo $valores; ?></p>
 			</div>
@@ -75,18 +75,18 @@
 
 	<div class="row-fluid funcionarios">
 		<div class="separador row-fluid">
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4 img_sep">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_esq.png" class="img-responsive">
 			</div> 
-			<div class="col-md-4">
+			<div class="col-xs-12 col-sm-12 col-md-4">
 				Conheça nossos profissionais
 			</div>
-			<div class="col-md-4">
+			<div class="col-xs-4 col-sm-4 col-md-4 img_sep">
 				<img src="<?php bloginfo('template_url'); ?>/img/separador_dir.png" class="img-responsive">
 			</div>
 		</div>
 
-		<div class="col-md-4 coluna">
+		<div class="col-xs-12 col-sm-12 col-md-4 coluna">
 			<p class="foto"><img src="<?php echo $foto_jerusa['url']; ?>" alt="Jerusa Rocha"></p>
 			<p class="nome"><?php echo $jerusa; ?></p>
 			<p class="descricao"><?php echo $desc_jerusa; ?></p>
@@ -95,7 +95,7 @@
 			<p class="complemento"><?php echo $complemento_jerusa; ?></p>
 			<p class="email"><a href="mailto:<?php $email_jerusa; ?>"><?php echo $email_jerusa; ?></a></p>
 		</div>
-		<div class="col-md-4 coluna">
+		<div class="col-xs-12 col-sm-12 col-md-4 coluna">
 			<p class="foto"><img src="<?php echo $foto_rita['url']; ?>" alt="Rita Gadelha"></p>
 			<p class="nome"><?php echo $rita; ?></p>
 			<p class="descricao"><?php echo $desc_rita; ?></p>
@@ -104,7 +104,7 @@
 			<p class="complemento"><?php echo $complemento_rita; ?></p>
 			<p class="email"><a href="mailto:<?php $email_rita; ?>"><?php echo $email_rita; ?></a></p>
 		</div>
-		<div class="col-md-4 coluna">
+		<div class="col-xs-12 col-sm-12 col-md-4 coluna">
 			<p class="foto"><img src="<?php echo $foto_karla['url']; ?>" alt="Anna Karla"></p>
 			<p class="nome"><?php echo $karla ?></p>
 			<p class="descricao"><?php echo $desc_karla; ?></p>

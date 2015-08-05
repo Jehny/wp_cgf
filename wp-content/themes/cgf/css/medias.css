@@ -1,0 +1,326 @@
+/* 
+ Queries para HOME
+*/
+@media screen and (max-width: 768px) {
+	.cabecalho .logo_img {
+		padding-left: 0;
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.logo_img img {
+		width: 95%;
+	}
+
+	.navbar-default .navbar-toggle {
+		margin-right: 0;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+		width: 18px;
+	}
+
+	.div_redes {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.cabecalho .redes_sociais {
+		float: left;
+	}
+
+	#slider .controle_left, #slider .controle_right, .imagem_footer {
+		display: none;
+	}
+
+	#sobre_home{
+		padding: 2% 0%;
+	}
+
+	#sobre_home .corpo, .primeiro_post .corpo {
+		width: 100%;
+	}
+
+	.primeiro_post .corpo {
+		font-size: 26px;
+	}
+
+	.noticia_item .item {
+		margin-bottom: 7%;
+	}
+
+	.noticia_item .data .dia, .noticia_item .data .mes {
+		font-size: 14px;
+	}
+
+	.servicos_home_item {
+		margin-bottom: 7%;
+	}
+
+	.div_btn {
+		margin-bottom: 7%;
+	}
+
+	footer {
+		padding: 1.5%;
+	}
+
+	footer .menu_footer {
+
+	}
+
+	@media screen and (min-width: 768px) {
+		.navbar-header {
+		    width: 23%;
+		}
+		
+	}
+
+	@media screen and (width: 568px){
+		.logo_img img {
+			width: 76%;
+		}
+	}
+
+	@media screen and (width: 736px){
+		.logo_img img {
+			width: 56%;
+		}
+		#sobre .funcionarios .foto img {
+			width: 31% !important;
+		}
+	}
+
+	@media screen and (width: 640px){
+		.logo_img img {
+			width: 56%;
+		}
+		#sobre .funcionarios .foto img {
+			width: 31% !important;
+		}
+	}
+
+}
+
+/* 
+ Queries para QUEM SOMOS
+*/
+@media screen and (max-width: 768px) {
+	.separador .img_sep {
+		display: none;
+	}
+
+	.separador div {
+		height: auto;
+	}
+
+	#sobre .funcionarios .coluna {
+		margin-bottom: 8%;
+	}
+
+	#sobre .funcionarios .foto img {
+		width: 40%;
+	}
+
+}
+
+/* 
+ Queries para SERVIÇOS
+*/
+@media screen and (max-width: 768px) {
+	#servicos .separador {
+		display: none;
+	}
+}
+
+/* 
+ Queries para BLOG LISTAGEM
+*/
+@media screen and (max-width: 768px) {
+	#listagem{
+		margin-bottom: 8%;
+	}
+
+	.busca, .posts_anteriores {
+		width: 100%;
+	}
+
+	.post .menu {
+		padding-top: 2%
+	}
+
+	.post .menu a {
+		font-size: 11px;
+	}
+
+	.busca form button {
+		padding: 2%;
+		vertical-align: middle;
+	}
+	footer .menu_footer {
+		width: 60%;
+	}
+
+	@media screen and (width: 768px){
+		.post .menu a img {
+			width: 5%;
+		}
+
+		.busca form button {
+			padding: 1.5%;
+		}
+	}
+	
+	
+}
+
+/* 
+ Queries para DETALHE
+*/
+@media screen and (max-width: 768px) {
+	#commentform textarea {
+		max-width: 100%;
+	}
+
+	#commentform input[type='text'] {
+		min-width: 100%;
+	}
+
+}
+
+/* 
+ Queries para FALE CONOSCO
+*/
+@media screen and (max-width: 768px) {
+	#contato #form_contato {
+		width: 100%;
+	}
+
+	.info_contato .dados {
+		padding-left: 0;
+		margin-top: 3%;
+	}
+
+	.info_contato .titulo {
+		margin-top: 3%;
+	}
+
+	#contato .separador img, .informacoes .separador img{
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 1200px) {}
+
+
+/* 
+ Queries para EXATAS
+*/
+
+@media screen and (width: 667px) {
+	.logo_img img {
+		width: 63%;
+	}
+
+	.noticia_item .data {
+		width: 9%;
+	}
+
+	#sobre .funcionarios .foto img {
+		width: 31%;
+	}
+
+	.post .menu a img {
+		width: 5%;
+	}
+
+	.busca form button {
+		vertical-align: bottom;
+		padding: 1.5%;
+	}
+}
+
+@media screen and (width: 1024px) {
+	.noticia_item .data {
+		width: 18%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.noticia_item .texto {
+		width: 82%;
+		font-size: 14px;
+	}
+
+	.titulo_noticia_item {
+		font-size: 18px;
+	}
+
+	footer .menu_footer {
+		width: 44%;
+	}
+
+	.busca, .posts_anteriores {
+		width: 100%;
+		margin-bottom: 7%;
+	}
+}
+
+@media screen and (width: 800px) {
+	.cabecalho .logo_img{
+		width: 90%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.logo_img img {
+		width: 100%;
+	}
+
+	.cabecalho .link_menu {
+		padding-right: 0;
+	}
+
+	.div_redes {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.navbar-header {
+		width: 28%;
+	}
+
+	#slider .carousel-control {
+		    top: 86%;
+	}
+
+	#slider .carousel-control.left span img {
+		margin: 50% auto;
+	}
+
+	.glyphicon {
+		margin-top: 30%;
+	}
+
+	footer .menu_footer {
+		width: 55%;
+	}
+
+	.imagem_footer {
+		width: 37%;
+	}
+
+	#sobre .funcionarios .foto img {
+		width: 30%;
+	}
+
+	.info_contato .titulo {
+		margin-top: 3%;
+	}
+	.info_contato .dados {
+		padding-bottom: 2%;
+	}
+}
+
