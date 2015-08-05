@@ -2,6 +2,7 @@
 	include "layout/header.php";
 
 	if(isset($_POST['submit'])){
+
 			$to = 'cgfjuridico@cgfjuridico.com.br';
 			$nome = $_POST['nome'];
 			$email = $_POST['email'];
@@ -87,6 +88,9 @@
 					<button class="btn btn-vermelho" type="submit" name="submit">Enviar mensagem</button>
 				</div>
 			</form>
+			<?php if(isset($teste)){
+				echo $teste;
+				} ?>
 		</div>
 	</section>
 	<section class="container-fluid informacoes">
@@ -108,7 +112,11 @@
 				<p class="desc"><?php echo $localizacao; ?></p>
 			</div>
 			<div class="col-md-6">
-				<p class="titulo">Mapa</p>
+				<div class="mapa">
+					<?php 
+						if ( dynamic_sidebar('mapa') ) : else : endif;
+					?>
+				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="col-md-12 dados">
@@ -119,12 +127,12 @@
 					<div class="col-md-10">
 						<p class="desc"><?php echo $telefone; ?></p>
 						<p class="desc"><?php echo $fax; ?></p>
-						<p class="desc"><?php echo $email; ?></p>
+						<p class="desc"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
 					</div>
 				</div>
 				<div class="col-md-12">
 					<p class="titulo">Horários de Atendimento</p>
-					<p class="desc"><?php echo $horario_de_atendimento; ?></p>
+					<div class="desc"><?php echo $horario_de_atendimento; ?></div>
 				</div>
 			</div>
 		</div>
@@ -143,7 +151,7 @@
         <?php if(isset($message)){ echo $message; } ?>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-cgf" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-vermelho" data-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>

@@ -5,11 +5,11 @@
 	<div id="slider">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
+		 <!--  <ol class="carousel-indicators">
 		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		  </ol>
+		  </ol> -->
 
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
@@ -35,15 +35,19 @@
 		  </div>
 
 		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span aria-hidden="true"><img src="<?php bloginfo('template_url'); ?>/img/prev.png" class="img-responsive"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon" aria-hidden="true"><img src="<?php bloginfo('template_url'); ?>/img/next.png 
-		    " class="img-responsive"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+		 <div class="controle_left">
+		 	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		 	  <span aria-hidden="true"><img src="<?php bloginfo('template_url'); ?>/img/prev.png" class="img-responsive"></span>
+		 	  <span class="sr-only">Previous</span>
+		 	</a>
+		 </div>
+		 <div class="controle_right">
+		 	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		 	  <span class="glyphicon" aria-hidden="true"><img src="<?php bloginfo('template_url'); ?>/img/next.png 
+		 	  " class="img-responsive"></span>
+		 	  <span class="sr-only">Next</span>
+		 	</a>
+		 </div>
 		</div>	
 	</div>
 	
@@ -67,12 +71,12 @@
 			<div class="corpo">
 				<?php 
 					$page = get_page_by_title( 'Quem Somos' );
-					echo  $page->post_content;
+					echo get_field('sobre_a_empresa', $page->ID);
 
 				?>
 			</div>
 			<div class="div_btn row-fluid">
-				<a href="" class="btn btn-vermelho">Saiba mais</a>
+				<a href="<?php echo esc_url(get_permalink(get_page_by_title('Quem Somos' ))); ?>" class="btn btn-vermelho">Saiba mais</a>
 			</div>
 		</div>
 	</section>
@@ -81,43 +85,17 @@
 	<div class="primeiro_post">
 		<section class="container-fluid">
 			<div class="corpo">
-
 				<?php 
-					$args = array(
-						'posts_per_page'   => 1,
-						'offset'           => 0,
-						'category'         => '',
-						'category_name'    => '',
-						'orderby'          => 'date',
-						'order'            => 'DESC',
-						'include'          => '',
-						'exclude'          => '',
-						'meta_key'         => '',
-						'meta_value'       => '',
-						'post_type'        => 'blog',
-						'post_mime_type'   => '',
-						'post_parent'      => '',
-						'author'	   	=> '',
-						'post_status'      => 'publish',
-						'suppress_filters' => true 
-					);
-					$blog = get_posts($args);
-					if($blog){
-						// print_r($blog);
-						foreach ($blog as $blog_item){
-							echo $blog_item->post_content;
-						?>
-							<div class="ass">
-								<?php $ass = get_post_meta($blog_item->ID, 'assinatura', true); ?>
-								<?php echo $ass; ?>
-							</div>
-							<div class="div_btn row-fluid">
-								<a href="<?php echo get_the_permalink($blog_item->ID); ?>" class="btn btn-preto">Fique por dentro  em nosso blog</a>
-							</div>
-				<?php  }
-					}
+					$blog = get_page_by_title('Blog listagem');
+					echo get_field('slogan', $blog->ID);
 				?>
-				
+
+				<div class="ass">
+					<?php echo get_field('assinatura', $blog->ID); ?>
+				</div>
+				<div class="div_btn row-fluid">
+					<a href="<?php echo esc_url(get_permalink(get_page_by_title('Blog listagem' ))); ?>" class="btn btn-preto">Fique por dentro  em nosso blog</a>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -166,7 +144,7 @@
 		</div>
 		
 		<div class="div_btn row-fluid">
-			<a href="" class="btn btn-preto">Veja  mais notícias e notas</a>
+			<a href="<?php echo esc_url(get_permalink(get_page_by_title('Noticias' ))); ?>" class="btn btn-preto">Veja  mais notícias e notas</a>
 		</div>
 	</section>
 
@@ -228,7 +206,7 @@
 		?>
 		</div>
 		<div class="div_btn row-fluid">
-			<a href="<?php echo get_the_permalink($blog_item->ID); ?>" class="btn btn-preto">Veja nosso lista de serviços</a>
+			<a href="<?php echo esc_url(get_permalink(get_page_by_title('Serviços'))); ?>" class="btn btn-preto">Veja nosso lista de serviços</a>
 		</div>
 
 

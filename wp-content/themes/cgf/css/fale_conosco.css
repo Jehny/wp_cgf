@@ -73,3 +73,30 @@
 	text-align: right;
 }
 
+.modal-title {
+	color: green;
+	font-size: 28px;
+}
+
+.modal-body {
+	font-size: 16px;
+}
+.modal-footer .btn-vermelho {
+	border-radius: 5px;
+}
+
+.mapa {
+	color: #272727;
+	font-size: 15px;
+}
+
+.mapa p {
+	margin-bottom: 0;
+	margin-top: 2%;
+}
+
+.mapa a, .mapa a:hover {
+	color: #777777;
+	font-size: 13px;
+
+}

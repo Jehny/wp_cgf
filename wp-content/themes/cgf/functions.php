@@ -6,6 +6,7 @@ add_action( 'widgets_init', 'face_widgets_init' );
 add_action( 'widgets_init', 'plus_widgets_init' );
 add_action( 'widgets_init', 'in_widgets_init' );
 add_action( 'widgets_init', 'feed_facebook_widgets_init' );
+add_action( 'widgets_init', 'mapa_widgets_init' );
 
 add_theme_support( 'post-thumbnails' );
 
@@ -23,7 +24,6 @@ add_action( 'init', 'servico_home_post_type' );
 add_action( 'init', 'redes_sociais' );
 
 add_post_type_support('servico_home', $supports);
-
 
 /**
  * Criando uma area de widgets
@@ -102,6 +102,22 @@ function feed_facebook_widgets_init() {
 	register_sidebar( array(
 		'name' => 'Feed Facebook',
 		'id' => 'feed_facebook',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+
+/**
+ * Widget para adicionar um mapa
+ *
+ */
+function mapa_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Mapa',
+		'id' => 'mapa',
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '',
