@@ -220,5 +220,11 @@ function my_custom_logo() {
 		</style>';
 }
 
+function buscar_post($texto){
+	global $wpdb;
+	$tipo = $wpdb->get_results("SELECT * FROM wp_posts WHERE (post_type='blog' OR post_type='post') and post_content like '%".$texto."%'");
+	return $tipo; 
+}
+
 
 ?>

@@ -62,9 +62,16 @@
 				</div>
 				<div class="posts_anteriores">
 					<h3><img src="<?php bloginfo('template_url'); ?>/img/ico_post_anteriores.png">Posts anteriores</h3>
-					<div class="item">Post de Abril de 2015</div>
-					<div class="item">Post de Março de 2015</div>
-					<div class="item">Post de Fevereiro de 2015</div>
+					<?php 
+
+						$loop2 = new WP_Query( array( 'post_type' => 'blog', 'posts_per_page' => 3, 'orderby' => 'DESC' ) );
+						while ( $loop2->have_posts() ) : $loop2->the_post();
+					?>
+					<div class="item">Post de <?php the_time('F'); ?> de <?php the_time('Y'); ?></div>
+
+					<?php  endwhile;
+						wp_reset_query();
+					?>
 				</div>
 
 				<div class="feed_facebook">
