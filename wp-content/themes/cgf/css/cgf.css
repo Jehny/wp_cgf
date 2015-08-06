@@ -69,8 +69,8 @@ body {
 	display: inherit;
 }
 
-.cabecalho .redes_sociais li:first-child {
-	text-align: right;
+.cabecalho .redes_sociais li {
+	text-align: center;
 }
 
 #slider .item img {
@@ -118,6 +118,21 @@ body {
 #slider .controle_right {
 
 }
+
+#slider .carousel-caption {
+	background: #333333;
+	opacity: 0.7;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 50px;
+}
+
+#slider .carousel-caption:hover {
+	background: #333333;
+	opacity: 0.9;
+}
+
+#slider .carousel-caption h3, #slider .carousel-caption p {}
 
 #sobre_home {
 	color: #3F3F3F;

@@ -20,16 +20,21 @@
 						if($i++ == 1){
 							$active = "active";
 						}else{$active = "";}
-						?>
+			?>
 						<div class="<?php echo $active; ?> item">
 							<img alt="" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($banner->ID)); ?>" class="img-responsive">
-						    <!-- <div class="carousel-caption">
-						       	<h3>...</h3>
-						        <p>...</p>
-						    </div> -->
-
-						</div>
-			<?php  }
+			<?php
+							if(get_field('titulo', $banner->ID) != ""){
+				?>				
+							    <div class="carousel-caption">
+							       	<h3><?php echo get_field('titulo', $banner->ID) ?></h3>
+							        <p><?php echo get_field('sub_titulo', $banner->ID) ?></p>
+							    </div>
+						<?php } ?>
+						</div>	
+						
+			<?php  		
+					}
 				}
 			?>
 		  </div>

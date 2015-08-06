@@ -17,7 +17,7 @@
 	}
 
 	.navbar-default .navbar-toggle .icon-bar {
-		width: 18px;
+		width: 14px;
 	}
 
 	.div_redes {
@@ -27,11 +27,43 @@
 
 	.cabecalho .redes_sociais {
 		float: left;
+		width: 77%;
+	}
+
+	.cabecalho .redes_sociais li {
+		width: 27%;
+		padding: 0;
+	}
+
+	.cabecalho .redes_sociais li img {
+		width: 100%;
+		margin: 0;
+		display: inherit;
 	}
 
 	#slider .controle_left, #slider .controle_right, .imagem_footer {
 		display: none;
 	}
+
+	#slider .carousel-caption {
+		height: 43px;
+		bottom: 6px;
+		left: 5%;
+		right: 5%;
+		padding-top: 0%;
+		padding-bottom: 1%;
+	}
+
+	#slider .carousel-caption h3 {
+		font-size: 14px;
+		margin-bottom: 1%;
+		margin-top: 1%;
+	}
+
+	#slider .carousel-caption p {
+		font-size: 12px;
+		margin-bottom: 1%;
+	}	
 
 	#sobre_home{
 		padding: 2% 0%;
@@ -97,6 +129,20 @@
 		}
 		#sobre .funcionarios .foto img {
 			width: 31% !important;
+		}
+
+		.cabecalho .redes_sociais li {
+			width: 15%;
+		}
+
+		.noticia_item .data {
+			width: 11%;
+		}
+	}
+
+	@media screen and (width: 667px){
+		.cabecalho .redes_sociais {
+			width: 43%;
 		}
 	}
 
@@ -210,11 +256,6 @@
 	}
 }
 
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 1200px) {}
-
-
 /* 
  Queries para EXATAS
 */
@@ -243,6 +284,13 @@
 }
 
 @media screen and (width: 1024px) {
+	.cabecalho .redes_sociais li {
+		padding: 0;
+	}
+	.cabecalho .redes_sociais li img {
+		width: 90%;
+	}
+
 	.noticia_item .data {
 		width: 18%;
 		padding-left: 0;
@@ -273,6 +321,15 @@
 		width: 90%;
 		padding-right: 0;
 		padding-left: 0;
+	}
+
+	.cabecalho .redes_sociais li {
+		width: 31%;
+		padding: 2px;
+	}
+
+	.cabecalho .redes_sociais li img {
+		width: 100%;
 	}
 
 	.logo_img img {

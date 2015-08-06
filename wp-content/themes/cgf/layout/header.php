@@ -71,7 +71,9 @@
 										 } 
 									?>
 		        					<li><a href="<?php echo $facebook; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/face_ico.png" class="img-responsive"></a></li>
-		        					<li><a href="<?php echo $gplus; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_ico.png" class="img-responsive"></a></li>
+		        					<li><a href="<?php echo $in; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/in_ico.png" class="img-responsive"></a></li>
+		        					<li><a href="<?php echo $gplus; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/plus_ico.png" class="img-responsive"></a></li>
+
 		        				</ul>
 	        			     	<button type="button" class="navbar-toggle collapsed buttom_toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        				        <span class="sr-only">Toggle navigation</span>
