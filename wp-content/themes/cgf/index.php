@@ -123,7 +123,7 @@
 
 		<div class="row-fluid noticia_item">
 		<?php if (have_posts()) {
-				query_posts('orderby=DESC&posts_per_page=4' );
+				query_posts('post_type=post&orderby=DESC&posts_per_page=4' );
 				 while (have_posts()) {
 				 	the_post();  
 		?>

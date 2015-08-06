@@ -254,6 +254,30 @@
 	#contato .separador img, .informacoes .separador img{
 		margin: auto;
 	}
+
+	.mapa_1 { 
+		padding-left: 5%;
+	}
+
+	.info_contato .dados {
+		padding-left: 4%;
+	}
+
+	.atend {
+		padding-left: 4%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.mapa_1 { 
+
+	}
+}
+
+@media screen and (max-width: 1200px) { 
+	.mapa_1 { 
+
+	}
 }
 
 /* 
@@ -280,6 +304,10 @@
 	.busca form button {
 		vertical-align: bottom;
 		padding: 1.5%;
+	}
+
+	.mapa_1 { 
+		
 	}
 }
 
@@ -313,6 +341,11 @@
 	.busca, .posts_anteriores {
 		width: 100%;
 		margin-bottom: 7%;
+	}
+
+	.mapa_1 { 
+		padding-left: 0;
+
 	}
 }
 
@@ -378,6 +411,10 @@
 	}
 	.info_contato .dados {
 		padding-bottom: 2%;
+	}
+
+	.mapa_1 { 
+		
 	}
 }
 

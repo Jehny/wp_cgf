@@ -69,6 +69,10 @@
 	padding-bottom: 5%;
 }
 
+.info_contato .end {
+	padding-left: 5%;
+}
+
 #contato .div_btn {
 	text-align: right;
 }
@@ -83,6 +87,10 @@
 }
 .modal-footer .btn-vermelho {
 	border-radius: 5px;
+}
+
+.mapa_1 {
+	padding-left: 7%;
 }
 
 .mapa {

@@ -24,7 +24,7 @@
 
 			if($email != "" && $message != "" && $nome != ""){
 				
-				// if(wp_mail( $to, $subject,  $message, $headers)){
+				if(wp_mail( $to, $subject,  $message, $headers)){
 					// $sucesso = "<div class='sucesso alert-info'>
 					// 	<button type='button' class='close' data-dismiss='alert'>×</button>
 					// 	<h4>Sucesso!</h4>
@@ -32,7 +32,7 @@
 					// 	</div>";
 					$teste = "<input type='hidden' id='enviado' />";
 					$message = "Seu e-mail foi enviado com sucesso!";
-				// }
+				}
 			}
 		}
 ?>
@@ -107,11 +107,11 @@
 		</div>
 		
 		<div class="row-fluid info_contato">
-			<div class="col-md-3">
+			<div class="col-md-3 end">
 				<p class="titulo">Localização</p>
 				<p class="desc"><?php echo $localizacao; ?></p>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 mapa_1">
 				<div class="mapa">
 					<?php 
 						if ( dynamic_sidebar('mapa') ) : else : endif;
@@ -119,18 +119,18 @@
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="col-md-12 dados">
+				<div class="col-xs-12 col-sm-12 col-md-12 dados">
 					<p class="titulo">Informações de Contato</p>
-					<div class="col-md-2">
+					<div class="col-xs-2 col-sm-1 col-md-2">
 						<img src="<?php bloginfo('template_url'); ?>/img/tel_contato.png">
 					</div>
-					<div class="col-md-10">
+					<div class="col-xs-10 col-sm-10 col-md-10">
 						<p class="desc"><?php echo $telefone; ?></p>
 						<p class="desc"><?php echo $fax; ?></p>
 						<p class="desc"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
 					</div>
 				</div>
-				<div class="col-md-12">
+				<div class="col-md-12 atend">
 					<p class="titulo">Horários de Atendimento</p>
 					<div class="desc"><?php echo $horario_de_atendimento; ?></div>
 				</div>
