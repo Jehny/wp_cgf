@@ -1,7 +1,28 @@
 /* 
  Queries para HOME
 */
+@media screen and (max-width:767px){
+	.cabecalho .link_menu {
+		position: absolute;
+	    right: 0;
+	    width: 33%;
+	    top: 50%;
+	    background-color: #CB2937;
+	    border-radius: 5px;
+	    z-index: 1;
+	}
+
+	.cabecalho .navbar-default .navbar-nav > li > a {
+		color: white;
+	}
+
+	.cabecalho .nav > li {
+		border-right: none;
+	}
+
+}
 @media screen and (max-width: 768px) {
+
 	.cabecalho .logo_img {
 		padding-left: 0;
 		width: 100%;
@@ -111,6 +132,10 @@
 	@media screen and (width: 568px){
 		.logo_img img {
 			width: 76%;
+		}
+
+		.cabecalho .redes_sociais li img {
+			width: 60%;
 		}
 	}
 
@@ -265,6 +290,16 @@
 
 	.atend {
 		padding-left: 4%;
+	}
+
+	.mapa img {
+		 width: 100%;
+	}
+
+	@media screen and (width: 736px) {
+		.cabecalho .redes_sociais li img {
+			width: 60%;
+		}
 	}
 }
 
