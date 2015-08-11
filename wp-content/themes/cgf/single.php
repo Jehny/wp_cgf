@@ -1,5 +1,10 @@
 <?php
 	include "layout/header.php";
+
+	if(isset($_POST['submit'])){
+		$teste = "<input type='hidden' id='enviado' />";
+		$message = "Seu comentário foi enviado com sucesso!";
+	}
 ?>
 <div class="bg_body">
 
@@ -53,6 +58,9 @@
 			?>
 
 			</div>
+			<?php if(isset($teste)){
+				echo $teste;
+				} ?>
 			<div id="listagem" class="col-xs-12 col-sm-12 col-md-4">
 				<div class="busca">
 					<form action="" method="POST">
@@ -86,6 +94,24 @@
 		</section>
 		
 	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sucesso!</h4>
+      </div>
+      <div class="modal-body">
+        <?php if(isset($message)){ echo $message; } ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-vermelho" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <?php

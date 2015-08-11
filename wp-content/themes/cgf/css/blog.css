@@ -189,3 +189,47 @@
 	padding: 2% 5%;
 	margin-bottom: 8%;
 }
+
+.comment-meta a{
+	    color: grey;
+}
+
+ol.commentlist {
+	background-color: white;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border: 1px solid #DDDDDD;
+}
+
+ol.commentlist li {
+	list-style: none;
+}
+
+.comment-reply-title a {
+	color: #C52534;
+}
+
+.comment-author {
+
+}
+
+.comment-author img {
+	
+}
+
+.comment-author a {
+	color: grey;
+}
+
+.reply {
+	padding-bottom: 2%;
+}
+
+.reply a {
+	color: #C52534;
+    padding-bottom: 2%;
+}
+
+.logged-in-as a {
+	color: #C52534;
+}
