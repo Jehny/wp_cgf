@@ -19,6 +19,11 @@
 	.cabecalho .nav > li {
 		border-right: none;
 	}
+	.cabecalho .redes_sociais li {
+		margin: 3px !important;
+		width: 17% !important;
+		margin-top: 8% !important;
+	}
 
 }
 @media screen and (max-width: 768px) {
@@ -52,8 +57,10 @@
 	}
 
 	.cabecalho .redes_sociais li {
-		width: 27%;
+		width: 20%;
 		padding: 0;
+		margin: 3px;
+		margin-top: 8%;
 	}
 
 	.cabecalho .redes_sociais li img {

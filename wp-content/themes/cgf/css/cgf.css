@@ -18,7 +18,7 @@ body {
 }
 
 .logo_img img{
-	  width: 62%;
+	  width: 61%;
 }
 
 .cabecalho .navbar-default {
@@ -71,6 +71,9 @@ body {
 
 .cabecalho .redes_sociais li {
 	text-align: center;
+	padding-right: 0px; 
+	padding-left: 0px; 
+	margin-top: 8%
 }
 
 #slider .item img {

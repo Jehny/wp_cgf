@@ -30,7 +30,7 @@
 				<section class="container-fluid">
 					<nav class="navbar navbar-default">
 						<div class="">
-							<div class="navbar-header col-xs-6 col-sm-4 col-md-4">
+							<div class="navbar-header col-xs-6 col-sm-4 col-md-3">
 						      	<a class="navbar-brand logo_img" href="#"><img src="<?php bloginfo('template_url'); ?>/img/logo_home.png" class="img-responsive"></a>
 						    </div>
 						    <?php
@@ -57,22 +57,25 @@
 						    wp_nav_menu( $defaults );
 
 						    ?>
-		                  	<div class="col-xs-6 col-sm-2 col-md-2 div_redes">
+		                  	<div class="col-xs-6 col-sm-2 col-md-3 div_redes">
 		        				<ul class="list-inline redes_sociais">
 									<?php
 										$redes = get_posts('post_type=redes_sociais');
 										$facebook = "";
 										$gplus = "";
 										$in = "";
+										$twitter = "";
 										foreach ($redes as $rede) {
 											$facebook = get_field('facebook', $rede->ID);
 											$gplus = get_field('google_plus', $rede->ID);
 											$in = get_field('linkedin', $rede->ID);
+											$twitter = get_field('twitter', $rede->ID);
 										 } 
 									?>
 		        					<li><a href="<?php echo $facebook; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/face_ico.png" class="img-responsive"></a></li>
 		        					<li><a href="<?php echo $in; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/in_ico.png" class="img-responsive"></a></li>
 		        					<li><a href="<?php echo $gplus; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/plus_ico.png" class="img-responsive"></a></li>
+		        					<li><a href="<?php echo $gplus; ?>" target="blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_ico.png" class="img-responsive"></a></li>
 
 		        				</ul>
 	        			     	<button type="button" class="navbar-toggle collapsed buttom_toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
