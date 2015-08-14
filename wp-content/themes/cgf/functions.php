@@ -10,11 +10,11 @@ add_action( 'widgets_init', 'mapa_widgets_init' );
 
 add_theme_support( 'post-thumbnails' );
 
-add_action( 'init', 'banners_post_type' );
+add_action( 'init', 'banners_post_type');
 
 add_post_type_support('banners', 'thumbnail');
 
-add_action( 'init', 'blog_post_type' );
+add_action( 'init', 'blog_post_type', 0);
 
 $supports = array('title', 'editor','thumbnail', 'excerpt', 'custom-fields', 'comments', 'revisions', 'author', 'post-formats', 'page-attributes');
 
@@ -140,6 +140,16 @@ function banners_post_type() {
 }
 
 function blog_post_type() {
+	// create a new taxonomy
+		register_taxonomy(
+			'blog_categoria',
+			'blog',
+			array(
+				'label' => __( 'Categoria' ),
+				'hierarchical' => true
+			)
+		);
+
 	register_post_type( 'blog',
 			array(
 					'labels' => array(
@@ -148,6 +158,7 @@ function blog_post_type() {
 					),
 					'public' => true,
 					'has_archive' => true,
+					'taxonomies' => array('blog_categoria'),
 			)
 	);
 }
@@ -224,6 +235,12 @@ function buscar_post($texto){
 	global $wpdb;
 	$tipo = $wpdb->get_results("SELECT * FROM wp_posts WHERE (post_type='blog' OR post_type='post') and post_content like '%".$texto."%'");
 	return $tipo; 
+}
+
+function listagem_blog() {
+	global $wpdb;
+	$tipo = $wpdb->get_results("SELECT DISTINCT * FROM wp_posts as p, wp_term_relationships as wr, wp_terms as wt WHERE (p.post_type='post' AND wr.term_taxonomy_id = wt.term_id AND wt.slug='blog' AND p.post_status='publish') OR (p.post_type='blog' AND p.post_status='publish')");
+	return $tipo;
 }
 
 

@@ -41,7 +41,7 @@
 										<img src="<?php bloginfo('template_url'); ?>/img/icon_leia.png"> Leia mais
 									</a>
 									<a href="<?php echo esc_url( get_permalink($key->ID)); ?>">
-										<img src="<?php bloginfo('template_url'); ?>/img/icon_comentario.png"> Seja o primeiro a comentar
+										<img src="<?php bloginfo('template_url'); ?>/img/icon_comentario.png"> Comentar
 									</a>
 								</div>
 							</div>
