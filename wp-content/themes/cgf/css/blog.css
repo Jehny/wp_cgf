@@ -1,6 +1,6 @@
 .bg_body { 
 	background: url('../img/bg_quem_somos.png');
-
+	min-height: 600px;
 }
 
 .img_topo {

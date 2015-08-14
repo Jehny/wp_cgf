@@ -251,6 +251,8 @@ footer {
 	border-bottom: 10px solid #666666;
 	text-align: center;
 	color: white;
+	bottom: 0;
+	width: 100%;
 }
 
 footer .menu_footer {

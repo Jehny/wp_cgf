@@ -14,7 +14,7 @@
 
 				<?php 
 					if(isset($result)){ 
-						print_r($result);
+						// print_r($result);
 						foreach ($result as $key) {
 
 				?>
@@ -49,7 +49,7 @@
 						}
 					} else {
 						// $loop = new WP_Query( array( 'post_type' => 'blog', 'orderby' => 'DESC', 'posts_per_page'=>10 ));
-						$loop = new WP_Query( array( 'post_type' => array( 'post', 'blog' ), 'category_name' => 'blog', 'posts_per_page' => 10, 'orderby' => 'DESC') );
+						$loop = new WP_Query( array( 'post_type' => array( 'blog', 'post' ), 'category_name'=>'blog', 'posts_per_page' => 10, 'orderby' => 'DESC') );
 						$i=0;
 						while ( $loop->have_posts() ) : $loop->the_post();
 							// if($i<=10;){
@@ -89,44 +89,6 @@
 							 $i++;
 						endwhile;
 						wp_reset_query();
-						// if($i<=10){
-						// 	$loop2 = new WP_Query( array( 'post_type' => 'post', 'orderby' => 'DESC' ) );
-						// 	while ( $loop2->have_posts() ) : $loop2->the_post();
-						// 		if($i<=10){
-					?>
-									<!-- <div class="post">
-										<div class="titulo row-fluid">
-											<div class="nome">
-												<h1> <?php the_title(); ?> </h1>
-												<p>Posted by: <?php the_author(); ?> - <?php the_time('d/m/Y'); ?></p>
-											</div>
-										</div>
-										<div class="corpo">
-											<?php 
-												if ( has_post_thumbnail() ) {
-													the_post_thumbnail('full'); 
-												}
-											?>
-											<?php if (has_excerpt() ) { ?>
-													<div class="resumo" ><?php the_excerpt(); ?></div>
-											<?php } ?>
-										</div>
-
-										<div class="menu">
-											<a href="<?php echo esc_url( get_permalink()); ?>">
-												<img src="<?php bloginfo('template_url'); ?>/img/icon_leia.png"> Leia mais
-											</a>
-											<a href="<?php echo esc_url( get_permalink()); ?>">
-												<img src="<?php bloginfo('template_url'); ?>/img/icon_comentario.png"> Comentar
-											</a>
-										</div>
-									</div> -->
-					<?php
-						// 		}
-						// 	$i++;
-						// 	endwhile;
-						// 	wp_reset_query();
-						// }
 					}
 				?>
 

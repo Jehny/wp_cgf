@@ -25,6 +25,15 @@ add_action( 'init', 'redes_sociais' );
 
 add_post_type_support('servico_home', $supports);
 
+function add_blog_automatically($post_ID) {
+	global $wpdb;
+	if(!has_term('','blog_categoria',$post_ID)){
+		$cat = 'blog';
+		wp_set_object_terms($post_ID, $cat, 'blog_categoria');
+	}
+}
+add_action('publish_blog', 'add_blog_automatically');
+
 /**
  * Criando uma area de widgets
  *
@@ -161,6 +170,7 @@ function blog_post_type() {
 					'taxonomies' => array('blog_categoria'),
 			)
 	);
+	
 }
 
 function redes_sociais() {
