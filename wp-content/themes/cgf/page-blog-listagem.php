@@ -50,7 +50,7 @@
 					} else {
 						// $loop = new WP_Query( array( 'post_type' => 'blog', 'orderby' => 'DESC', 'posts_per_page'=>10 ));
 						$args = array( 
-							'post_type' => array( 'post', 'blog' ),
+							'post_type' => array( 'blog', 'post' ),
 							// 'category_name'=>'blog',
 							'posts_per_page' => 10, 
 							'orderby' => 'DESC'
