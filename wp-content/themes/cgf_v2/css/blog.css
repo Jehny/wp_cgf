@@ -1,0 +1,235 @@
+.bg_body { 
+	background: url('../img/bg_quem_somos.png');
+	min-height: 600px;
+}
+
+.img_topo {
+	/*background: url(../img/bg_listagem.png);
+	background-size: cover;*/
+}
+
+.img_topo img {
+	  width: 100%;
+}
+
+#listagem {
+	margin-top: 3%;
+}
+
+.post {
+	background-color: white;
+	padding: 2% 5% 2% 5%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	border: 1px solid #DDDDDD;
+}
+
+.post .titulo {
+	font-family: 'myriad_pro';
+}
+
+.post .titulo .numero {
+	float: left;
+	font-size: 3.5em;
+	border-right: 5px solid #E53D58;
+	color: #E53D58;
+	margin-right: 2%;
+	padding-right: 2%;
+}
+
+.post .titulo .nome {
+	color: #E53D58;
+}
+
+.post .titulo .nome h1 {
+	color: #444444;
+	font-size: 28px;
+}
+
+.post .titulo .nome p {
+	color: black;
+	padding-bottom: 4%;
+}
+
+.post .corpo {
+	border-top: none;
+	margin-top: 1%;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.post .corpo img {
+	width: 100%;
+}
+
+.post .corpo .resumo {
+	width: 100%;
+	color: #959595;
+	padding-bottom: 4%;
+}
+
+.post .menu {
+	border-top: 1px solid #DDDDDD; 
+	border-bottom: 1px solid #DDDDDD; 
+	padding-top: 1%;
+	padding-bottom: 1%
+	
+}
+
+.post .menu a {
+	padding-right: 2%;
+	color: #444444;
+}
+
+.post .menu a :hover {
+	color: #444444;
+}
+.post .menu a img {
+	vertical-align: middle;
+	padding-right: 3px;
+}
+
+.post .div_buttom {
+	text-align: right;
+}
+
+.busca {
+	border: 1px solid #DDDDDD;
+	margin-bottom: 5%;
+	padding: 5%;
+	width: 70%;
+	background: white;
+}
+
+.busca form {
+	margin-bottom: 0;
+}
+
+.busca form input { 
+	border-radius: 7px;
+	height: 35px;
+	padding-left: 2%;
+	border-style: solid;
+	border-color: #DDDDDD;
+	border-width: 1px;
+	width: 84%;
+}
+
+.busca form button { 
+	padding: 2.5%;
+	border-radius: 5px;
+	background:#E53D58;
+	background-color: #E53D58;
+	border: none;
+}
+
+.busca form button img { }
+
+.posts_anteriores {
+	border: 1px solid #DDDDDD;
+	padding: 0% 10% 5% 10%;
+	font-family: 'myriad_pro';
+	width: 70%;
+	background: white;
+	margin-bottom: 7%;
+
+}
+
+.posts_anteriores h3 {
+ 	color: #727272;
+	margin-bottom: 10%;
+}
+
+.posts_anteriores h3 img {
+	margin-right: 4%;
+}
+
+.posts_anteriores .item {
+	border-top: 1px solid #DDDDDD;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	color: #838383;
+}	
+
+/*Comentários*/
+
+#form-allowed-tags {
+	display: none;
+}
+
+#commentform .form-submit {
+	max-width: 80%;
+	text-align: right;
+}
+
+#commentform input[type='text'] {
+	height: 30px;
+    border-radius: 5px;
+    border: 1px solid #CACACA;
+    min-width: 50%;
+}
+
+#commentform textarea {
+	border-radius: 5px;
+	border: 1px solid #CACACA;
+	min-width: 80%;
+}
+
+#commentform label {
+	display: block;
+	font-weight: normal;
+}
+
+#respond {
+	border: 1px solid #DDDDDD;
+	background-color: white;
+	background: white;
+	padding: 2% 5%;
+	margin-bottom: 8%;
+}
+
+.comment-meta a{
+	    color: grey;
+}
+
+ol.commentlist {
+	background-color: white;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border: 1px solid #DDDDDD;
+}
+
+ol.commentlist li {
+	list-style: none;
+}
+
+.comment-reply-title a {
+	color: #C52534;
+}
+
+.comment-author {
+
+}
+
+.comment-author img {
+	
+}
+
+.comment-author a {
+	color: grey;
+}
+
+.reply {
+	padding-bottom: 2%;
+}
+
+.reply a {
+	color: #C52534;
+    padding-bottom: 2%;
+}
+
+.logged-in-as a {
+	color: #C52534;
+}

@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'cgf';
+	src:url('fonts/cgf.eot?-l7v2hk');
+	src:url('fonts/cgf.eot?#iefix-l7v2hk') format('embedded-opentype'),
+		url('fonts/cgf.ttf?-l7v2hk') format('truetype'),
+		url('fonts/cgf.woff?-l7v2hk') format('woff'),
+		url('fonts/cgf.svg?-l7v2hk#cgf') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'cgf';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-inbox:before {
+	content: "\e600";
+}
+.icon-user:before {
+	content: "\e601";
+}
+.icon-target2:before {
+	content: "\e602";
+}
+.icon-inbox-alt:before {
+	content: "\e621";
+}
+.icon-home2:before {
+	content: "\e688";
+}
+.icon-office:before {
+	content: "\e68b";
+}
+.icon-bullhorn:before {
+	content: "\e6a3";
+}
+.icon-profile:before {
+	content: "\e6ab";
+}
+.icon-bubbles:before {
+	content: "\e6ee";
+}
+.icon-bubbles3:before {
+	content: "\e6f1";
+}
+.icon-user2:before {
+	content: "\e6f3";
+}
+.icon-users2:before {
+	content: "\e6f4";
+}
+.icon-user5:before {
+	content: "\e6f7";
+}
+.icon-briefcase:before {
+	content: "\e72a";
+}
+.icon-target:before {
+	content: "\e72f";
+}
+.icon-eye2:before {
+	content: "\e749";
+}
+.icon-radio-checked:before {
+	content: "\e7bb";
+}
+.icon-googleplus5:before {
+	content: "\e7e6";
+}
+.icon-facebook4:before {
+	content: "\e7e9";
+}
+.icon-twitter3:before {
+	content: "\e7ec";
+}
+.icon-uniE605:before {
+	content: "\e605";
+}
+.icon-uniE608:before {
+	content: "\e608";
+}
+.icon-uniE60A:before {
+	content: "\e60a";
+}
+.icon-arrow-left:before {
+	content: "\e635";
+}
+.icon-arrow-up2:before {
+	content: "\e637";
+}
+.icon-uniE60B2:before {
+	content: "\e638";
+}
+.icon-twitter5:before {
+	content: "\e92a";
+}
+.icon-facebook6:before {
+	content: "\e92c";
+}
+.icon-googleplus7:before {
+	content: "\e92f";
+}
+.icon-tumblr4:before {
+	content: "\e933";
+}
+.icon-linkedin3:before {
+	content: "\e934";
+}
+.icon-instagram3:before {
+	content: "\e940";
+}
