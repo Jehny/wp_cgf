@@ -49,7 +49,14 @@
 						}
 					} else {
 						// $loop = new WP_Query( array( 'post_type' => 'blog', 'orderby' => 'DESC', 'posts_per_page'=>10 ));
-						$loop = new WP_Query( array( 'post_type' => array( 'blog', 'post' ), 'category_name'=>'blog', 'posts_per_page' => 10, 'orderby' => 'DESC') );
+						$args = array( 
+							'post_type' => array( 'blog', 'post' ),
+							// 'category_name'=>'blog',
+							'posts_per_page' => 10, 
+							'orderby' => 'DESC'
+						);
+						$loop = new WP_Query($args);
+						// $loop = new WP_Query( array( 'post_type' => array( 'blog', 'post' ), 'category_name'=>'blog', 'posts_per_page' => 10, 'orderby' => 'DESC') );
 						$i=0;
 						while ( $loop->have_posts() ) : $loop->the_post();
 							// if($i<=10;){
