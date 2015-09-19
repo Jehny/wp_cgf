@@ -1,4 +1,4 @@
-<div class="row-fluid expertises_bg">
+<div id ="expertises" class="row-fluid expertises_bg">
 	<div class="container-fluid">
 		<h1>Conheça nossas Expertises</h1>
 		<div class="traco">

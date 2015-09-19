@@ -80,10 +80,11 @@ body {
 }
 
 .cabecalho .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #C52534;
-  	background-color: white;
+	color: white;
+  	background-color: transparent;
   	padding-bottom: 5px;
 	padding-top: 5px;
+	border-bottom: 1px solid #DD4046;
 }
 
 .cabecalho .link_menu {
@@ -94,6 +95,40 @@ body {
 	position: absolute;
 	z-index: 1;
 	width: 100%;
+}
+#menu {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  border-color: transparent;
+  position: fixed;
+  background-color:transparent; 
+}
+#menu .logo {
+ /* float: left;
+  padding-right: 1%;
+  padding-left: 7%;*/
+  padding-left: 5%;
+}
+#menu nav ul {
+  float: right;
+  height: 36px;
+}
+#menu nav li {
+  padding: 0.5% 3%;
+  text-align: center;
+  text-transform: none;
+}
+#menu nav li a {
+  padding: 4px;
+  color: white;
+}
+#menu nav li a:hover {
+  color: white;
+  border-bottom: 2px solid #cc0c1f;
+  text-decoration: none;
 }
 
 #slider {
@@ -288,8 +323,7 @@ body {
 }
 
 .servicos {
-	margin-bottom: 10%;
-	padding-bottom: 5%;
+	padding-bottom: 2%;
 }
 
 .servicos .nav-tabs {
@@ -317,7 +351,7 @@ body {
 .servicos > .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
 	background: white;
 	background-color: white;
-	padding-bottom: 9px;
+	padding-bottom: 15px;
 }
 .servicos > .nav-tabs > li.active > a:hover {
 	background: white;
@@ -343,6 +377,7 @@ body {
 .servicos .nav-tabs li, .servicos .nav-tabs li:hover {
 	text-align: center;
 	background: #F82F3F;
+	min-width: 16.66%;
 }
 
 .servicos .nav-tabs li a {
@@ -360,6 +395,7 @@ body {
     line-height: 1.42857143;
     /*border: 0px solid #DDDDDD;*/
     border-radius: 0px 0px 0 0;
+    padding: 15px 15px;
 }
 
 .servicos .nav-tabs li .icone_nav {
@@ -394,6 +430,62 @@ body {
 	font-size: 18px;
 	width: 80%;
 	margin: auto;
+	padding-bottom: 4%;
+	padding-top: 2%;
+}
+
+.noticias {
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+.noticias i {
+	color: #CF0616;
+	font-size: 3em;
+}
+
+.noticia_item {
+	padding-bottom: 2%;
+	overflow: hidden;
+}
+
+.noticias .titulo_sessao {
+	font-size: 32px;
+}
+
+.noticias .subtitulo {
+	font-size: 22px;
+	margin-bottom: 3%;
+}
+
+.noticia_item .data {
+	background: #68635E;
+	color: white;
+	text-transform: uppercase;
+	padding-top: 3%;
+	padding-bottom: 1%;
+	font-weight: bold;
+}
+
+.noticia_item .data .dia {
+	font-size: 18px;
+}
+
+.noticia_item .data .mes {
+	font-size: 18px;
+}
+
+.noticia_item .titulo_noticia_item {
+	font-size: 18px;
+	margin-top: 0;
+}
+
+.noticia_item .texto {
+	text-align: left;
+}
+
+.noticia_item .resumo_noticia_item {
+	color: #ABA8B1;
 }
 
 .traco_centro {
@@ -405,6 +497,204 @@ body {
 	color: #F82F3F;
     border-color: #F82F3F;
     width: 7%;
+    border: 1px solid;
+    margin-bottom: 0;
+}
+
+.time {
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.time h1 {
+	font-size: 32px;
+	
+}
+
+.time i {
+	font-size: 3em;
+	color: #A5010E;
+}
+
+#equipe {
+	margin-top: 3%;
+}
+
+#equipe ul {list-style:none;}
+#equipe h3 {
+	color:#2A251F;
+	text-transform:capitalize;
+	font-size:24px;
+	line-height:1;
+}
+#equipe p {
+	color:#777777;
+}
+#equipe .frame-0 {
+	background: #F2F2F2 url(../img/jerusa.jpg) no-repeat left top;
+	/*background:url(../img/jerusa.png) top left no-repeat;
+	background-image: url(../img/jerusa.png) top left no-repeat;*/
+}
+#equipe .frame-1 {
+	background: #F2F2F2 url(../img/rita.jpg) no-repeat left top;
+	/*background:url(../img/rita.png) top left no-repeat;
+	background-image: url(../img/rita.png) top left no-repeat;*/
+}
+#equipe .frame-2 {
+	background: #F2F2F2 url(../img/karla.jpg) no-repeat left top;
+	/*background:url(../img/karla.png) top left no-repeat;
+	background-image: url(../img/karla.png) top left no-repeat;*/
+}
+#equipe .frame-content {
+	width:715px;
+	padding: 30px 30px 50px 50px;
+	font-size: 15px;
+	color:#777777;
+	text-align: left;
+}
+#equipe .frame-closed .frame-content {display:none;}
+#equipe .frame-open .frame-content {
+	display:block;
+	margin: auto;
+	float: right;
+	padding-right: 12%;
+}
+
+#equipe .area h4 {
+	color: #353434;
+}
+
+#equipe .atividade h4 {
+	color: #353434;
+}
+
+#equipe .email, #equipe .email a, #equipe .email a:hover {
+	color: #D05762;
+}
+
+#contato {
+	text-align: center;
+	position: relative;
+}
+
+#contato h1 {
+	color: #2A251F;
+	font-size: 32px;
+}
+
+#contato i {
+	font-size: 3em;
+	color: #A5010E;
+}
+
+#contato h2 {
+	color: #2A251F;
+	font-size: 18px;
+	margin-bottom: 5%;
+}
+
+#contato form {
+	text-align: left;
+	overflow: auto;
+}
+
+#contato label {
+	width: 100%;
+	color: #666666;
+}
+
+#contato .linh_form {
+	padding-bottom: 7%;
+}
+
+#contato .linh_form_m {
+	padding-bottom: 2%;
+}
+
+#contato .linh_form input,#contato .linh_form_m input {
+	background: #EEEEEE;
+    border: solid 1px #DDDDDD;
+    height: 30px;
+    width: 90%;
+}
+
+#contato .linh_form input:focus, 
+#contato .linh_form_m input:focus,
+#contato .linh_form textarea:focus {
+	background: #FBFBFB;
+}
+
+#contato .linh_form textarea {
+	background: #EEEEEE;
+	width: 90%;
+	border: solid 1px #DDDDDD;
+}
+
+#form_contato .div_btn {
+	text-align: center;
+}
+
+#form_contato .div_btn .btn {
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+footer {
+	text-align: center;
+	background: #333333;
+	overflow: auto;
+	padding: 2% 2% 1% 2%;
+}
+
+.separador_footer {
+	background: #DDD;
+    width: 4.5%;
+    border-radius: 100%;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -26px;
+    height: 60px;
+    padding-top: 1%;
+}
+
+.separador_footer i {
+	font-size: 2.5em !important;
+	color: #666666 !important;
+}
+
+footer .logo_footer {
+	margin-top: 1%;
+}
+
+footer .logo_footer img {
+	
+}
+
+footer .endereco {
+	color: white;
+	margin-top: 2%;
+}
+
+footer .endereco a, footer .endereco a:hover {
+	color: white;
+}
+
+footer .endereco p {
+	margin-bottom: 0;
+}
+
+.traco_left {
+	position: relative;
+	overflow: auto;
+}
+
+.traco_left hr  {
+	color: #F82F3F;
+    border-color: #F82F3F;
+    width: 15%;
+    float: left;
     border: 1px solid;
     margin-bottom: 0;
 }

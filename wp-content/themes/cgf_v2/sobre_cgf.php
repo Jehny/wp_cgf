@@ -12,7 +12,7 @@
 
 ?>
 
-<section class="container-fluid sobre_empresa">
+<section id="sobre_empresa" class="container-fluid sobre_empresa">
 	<div class="traco">
 		<hr>
 	</div>

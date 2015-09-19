@@ -8,6 +8,8 @@
 		
 		<script src="<?php bloginfo('template_url'); ?>/js/jquery-2.1.4.min.js"></script>
 		<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/js/jquery.zaccordion.min.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/js/jquery.easing.min.js"></script>
 		<script src="<?php bloginfo('template_url'); ?>/js/cgf.js"></script>
 
 		<title>CGF Jurídico</title>
@@ -42,11 +44,30 @@
 				</ul>
 			</div>
 		</div>
-		<section class="container-fluid menu_home">
-			<div class="logo col-md-4">
-				<h1><a href=""><img src="<?php bloginfo('template_url'); ?>/img/logo_header.png"></a></h1>
+		<div class="menu_home">
+			<div id="menu" class="navbar navbar-default navbar-header row-fluid">
+				<div class="logo col-md-4">
+					<h1><a href=""><img src="<?php bloginfo('template_url'); ?>/img/logo_header.png" class="logo_h"></a></h1>
+				</div>
+				<div class="navbar-header nav_cel_header">
+			        <button type="button" class="navbar-toggle nav_cel_button" data-toggle="collapse" data-target="#navbar-collapse">
+			          <span class="sr-only">Toggle navigation</span>
+			          <span class="glyphicon glyphicon-align-justify"></span>
+			         <!--  <span class="icon-bar"></span>
+			          <span class="icon-bar"></span> -->
+			        </button>
+			    </div>
+				<nav id="navbar-collapse" class="collapse navbar-collapse nav_cel">
+					<ul class="text-uppercase nav navbar-nav col-xs-12 col-sm-7 col-md-7 col-md-offset-1">
+						<li><a href="#menu" class="scroll" data-offset="85" id="home_link">Home</a></li>
+						<li><a href="#sobre_empresa" id="empresa_link" class="scroll" data-offset="60">Empresa</a></li>
+						<li><a href="#expertises" id="expertises_link" class="scroll" data-offset="60">Expertises</a></li>
+						<li><a href="#time" id="time_link" class="scroll" data-offset="60">Time</a></li>
+						<li><a href="#contato" id="contato_link" class="scroll" data-offset="60">Contato</a></li>
+					</ul>
+				</nav>
 			</div>
-		 	<nav class="navbar navbar-default col-xs-6 col-sm-6 col-md-8">
+		 	<!-- <nav class="navbar navbar-default col-xs-6 col-sm-6 col-md-8">
 		 		<div class="">
 		 		    <?php
 		 			 
@@ -82,9 +103,9 @@
 		 			 
 		 		</div>
 		 		
-		 	</nav>
+		 	</nav> -->
 		 	
-		 </section>				
+		 </div>				
 	</div>
 
 			

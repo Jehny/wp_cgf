@@ -134,7 +134,6 @@ function mapa_widgets_init() {
 	) );
 }
 
-
 function banners_post_type() {
 	register_post_type( 'banners',
 			array(
