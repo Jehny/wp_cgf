@@ -1,0 +1,116 @@
+/* 
+ Queries para HOME
+*/
+@media screen and (max-width:767px){
+
+}
+@media screen and (max-width: 768px) {
+
+	#slider .carousel-caption {
+		bottom: 25%;
+	}
+
+	#slider .carousel-caption p {
+		font-size: 14px;
+	}
+
+	#slider .carousel-caption h3 {
+		font-size: 20px;
+	}
+
+	.solicite_consulta {
+		top: 40%;
+	}
+
+	.sobre_empresa .valores .texto {
+		padding: 0% 10% 0% 10%;
+	}
+
+	.time, #equipe {
+		overflow: auto;
+	}
+
+	#equipe .perfil .foto_time img {
+		height: 500px;
+	}
+
+	#equipe .perfil {
+		overflow: auto;
+		margin-bottom: 3%;
+	}
+
+	#equipe .texto {
+		text-align: left;
+	}
+
+	@media screen and (min-width: 768px) {
+		
+	}
+
+	@media screen and (width: 736px) {
+
+	}
+
+	@media screen and (width: 568px){
+
+	}
+
+	@media screen and (width: 640px){
+
+	}
+
+	@media screen and (width: 667px){
+
+	}
+
+}
+
+@media screen and (max-width: 1200px) { 
+
+	@media screen and (max-width: 992px) {
+
+	}
+
+	@media screen and (width: 800px) {
+
+	}
+}
+
+@media screen and (width: 1024px) {
+	#slider .carousel-caption {
+		bottom: 33%;
+	}
+
+	.solicite_consulta {
+		top: 40%;
+	}
+
+	.noticia_item .data {
+		padding-left: 2%;
+	    padding-top: 3%;
+	    padding-bottom: 0%;
+	    padding-right: 2%;
+	}
+
+	#equipe .frame-content {
+		width: 425px;
+	    padding: 10px 30px 50px 50px;
+	    font-size: 13px;
+	    padding-right: 2% !important;		
+	}
+
+	#form_contato {
+		padding-bottom: 3%;
+	}
+
+	.separador_footer {
+		width: 5.5%;
+	}
+
+	footer .logo_footer img {
+		padding-top: 2%;
+	}
+}
+
+
+

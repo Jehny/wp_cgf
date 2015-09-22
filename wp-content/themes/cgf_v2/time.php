@@ -34,7 +34,7 @@
 	</div>
 
 	<div id="equipe">
-		<ul>
+		<ul class="hidden-sm hidden-xs">
 			<li class="frame-0">
 				<div class="frame-content">
 					<div class="conteudo_equipe">
@@ -131,6 +131,114 @@
 				</div>
 			</li>
 		</ul>
+
+		<div class="hidden-md hidden-lg row-fluid perfil">
+			<div class="foto_time col-sm-5">
+				<img src="<?php bloginfo('template_url'); ?>/img/jerusa.jpg" class="img-responsive">
+			</div>
+			<div class="texto col-sm-7">
+				<div class="conteudo_equipe">
+					<div class="traco_left"><hr></div>
+					<h3><?php echo $jerusa; ?></h3>
+					<div class="descricao_profissional">
+						<?php echo $desc_jerusa; ?>
+					</div>
+					<?php if($atuacao_jerusa){ ?>
+						<div class="area">
+							<?php echo $atuacao_jerusa; ?>
+						</div>
+					<?php } ?>
+
+					<?php if($atividade_jerusa){ ?>
+					<div class="atividade">
+						<?php echo $atividade_jerusa; ?>
+					</div>
+					<?php } ?>
+
+					<?php if($complemento_jerusa){ ?>
+					<div class="complemento">
+						<?php echo $complemento_jerusa; ?>
+					</div>
+					<?php } ?>
+					<?php if($email_jerusa){ ?>
+					<div class="email">
+						<a href="mailto:<?php $email_jerusa; ?>"><?php echo $email_jerusa; ?></a>
+					</div>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-md hidden-lg row-fluid perfil">
+			<div class="foto_time col-sm-5">
+				<img src="<?php bloginfo('template_url'); ?>/img/rita.jpg" class="img-responsive">
+			</div>
+			<div class="texto col-sm-7">
+				<div class="conteudo_equipe">
+					<div class="traco_left"><hr></div>
+					<h3><?php echo $rita; ?></h3>
+					<div class="descricao_profissional">
+						<?php echo $desc_rita; ?>
+					</div>
+					<?php if($atuacao_rita){ ?>
+						<div class="area">
+							<?php echo $atuacao_rita; ?>
+						</div>
+					<?php } ?>
+					<?php if($atividade_rita){ ?>
+						<div class="atividade">
+							<?php echo $atividade_rita; ?>
+						</div>
+					<?php } ?>
+					<?php if($complemento_rita){ ?>
+						<div class="complemento">
+							<?php echo $complemento_rita; ?>
+						</div>
+					<?php } ?>
+					<?php if($email_rita){ ?>
+						<div class="email">
+							<a href="mailto:<?php $email_rita; ?>"><?php echo $email_rita; ?></a>
+						</div>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-md hidden-lg row-fluid perfil">
+			<div class="foto_time col-sm-5">
+				<img src="<?php bloginfo('template_url'); ?>/img/karla.jpg" class="img-responsive">
+			</div>
+			<div class="texto col-sm-7">
+				<div class="conteudo_equipe">
+					<div class="traco_left"><hr></div>
+					<h3><?php echo $karla ?></h3>
+					<div class="descricao_profissional">
+						<?php echo $desc_karla; ?>
+					</div>
+					<?php if($atuacao_karla){ ?>
+						<div class="area">
+							<?php echo $atuacao_karla; ?>
+						</div>
+					<?php } ?>
+					<?php if($atividade_karla){ ?>
+						<div class="atividade">
+							<?php echo $atividade_karla; ?>
+						</div>
+					<?php } ?>
+					<?php if($complemento_karla){ ?>
+						<div class="complemento">
+							<?php echo $complemento_karla; ?>
+						</div>
+					<?php } ?>
+					<?php if($email_karla){ ?>
+						<div class="email">
+							<a href="mailto:<?php $email_karla; ?>"><?php echo $email_karla; ?></a>
+						</div>
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	
 

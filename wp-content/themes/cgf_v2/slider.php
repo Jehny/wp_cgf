@@ -50,7 +50,7 @@
 	</div>	
 </div>
 
-<div class="container-fluid solicite_consulta">
+<div class="container-fluid solicite_consulta hidden-sm hidden-xs">
 	<form action="" method="post" class="row-fluid"> 
 		<div class="col-md-3">
 			<input type="text" name="nome_consulta" placeholder="O seu nome">
