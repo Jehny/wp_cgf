@@ -1,0 +1,198 @@
+/* 
+ Queries para HOME
+*/
+
+@media screen and (width: 768px) {
+	#slider .carousel-caption h3 {font-size: 24px;}
+	#slider .carousel-caption {bottom: 22%;}
+	.navbar-default .navbar-toggle {background: white;}
+	.separador_footer {width: 7.5%;}
+	#form_contato {margin-bottom: 4%;}
+	footer .logo_footer {margin-top: 4%;}
+}
+
+@media screen and (max-width: 767px) {
+
+	.navbar-header {
+		background: #C12232;
+	}
+	.navbar {
+		border: none;
+	} 
+
+	#navbar-collapse {
+		background-color: #C12232;
+	    width: 38%;
+	    float: right;
+	}
+
+	.sobre_empresa h1 {padding-left: 4%;}
+	.sobre_empresa .traco {padding-left: 2%;}
+	.sobre_empresa .valores .texto {padding: 0% 0% 0% 0%;}
+	#equipe h3 {font-size: 18px;}
+
+	.nav_cel_button {width: 8%; background-color: white;}
+	.icon-bar {width: 100% !important;}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form { height: 230px;}
+	.navbar-default .navbar-toggle {background: white;}
+
+
+	#slider .carousel-caption {
+		bottom: 25%;
+	}
+
+	#slider .carousel-caption p {
+		font-size: 14px;
+	}
+
+	#slider .carousel-caption h3 {
+		font-size: 20px;
+	}
+
+	.solicite_consulta {
+		top: 40%;
+	}
+
+	.sobre_empresa .valores .texto {
+		padding: 0% 10% 0% 10%;
+	}
+
+	.time, #equipe {
+		overflow: auto;
+	}
+
+	#equipe .perfil .foto_time img {
+		height: 400px;
+	}
+
+	#equipe .perfil {
+		overflow: auto;
+		margin-bottom: 3%;
+	}
+
+	#equipe .texto {
+		text-align: left;
+	}
+
+	@media screen and (width: 736px) {
+		.nav_cel_button {width: 6%;}
+		.sobre_empresa {margin-top: 6%;}
+		.logo_h_fixed {display: block; width: 125px;}
+	}
+
+	@media screen and (width: 667px) {
+		#equipe .perfil .foto_time img {
+			float: left;
+			margin-right: 2%;
+		}
+	}
+
+	@media screen and (width: 736px) {
+		#equipe .perfil .foto_time img {
+			float: left;
+			margin-right: 2%;
+		}
+	}
+
+	@media screen and (max-width: 667px){
+		#menu {top: 37px;}
+		.nav_cel_button {width: 8%; background-color: white;}
+		.icon-bar {width: 100% !important;}
+		.navbar-default .navbar-collapse, .navbar-default .navbar-form { height: 230px;}
+		.sobre_empresa { margin-top: 7%; }
+		.sobre_empresa h1 {padding-left: 4%;}
+		.sobre_empresa .traco {padding-left: 2%;}
+		.sobre_empresa .valores .divisao {border-right:none;}
+		.noticia_item .item {margin-bottom: 2%;}
+		.separador_footer {display: none;}
+		.title_xs {display: none;}
+	}
+
+	@media screen and (width: 640px){
+		.logo_h_fixed {display: block; 	width: 125px;}
+	}
+
+	@media screen and (width: 568px){
+
+	}
+
+	@media screen and (max-width: 420px){
+		.div_redes a i {font-size: 1.5em;}
+		.logo_h_fixed {display: block;}
+		#menu {top: 31px;}
+		.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+			    height: 230px;
+		}
+		.sobre_empresa {padding-top: 20%;}
+		.sobre_empresa h1 {font-size: 22px;}
+		.sobre_empresa .valores .divisao {border-right:none;}
+		.nav_cel_button {width: 12%; background-color: white;}
+		.icon-bar {width: 100% !important;}
+		.expertises_bg h1 {font-size: 24px;}
+		.expertises_bg h2 {font-size: 15px;}
+		.title_xs {display: none;}
+		.servicos > .nav-tabs > li > a {padding: 10px 10px;}
+		.servicos > .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {padding-bottom: 10px;}
+		.servicos .tab-pane h1 {font-size: 20px;}
+		.conteudo_servicos {font-size: 15px; width: 95%;}
+		.noticias .titulo_sessao {font-size: 26px;}
+		.noticias .subtitulo {font-size: 19px; margin-bottom: 8%;}
+		.noticia_item .data {padding-left: 5px; padding-right: 5px;}
+		.noticia_item .titulo_noticia_item {font-size: 14px;}
+		.noticia_item .resumo_noticia_item {font-size: 12px;}
+		.time h1, #contato h1 {font-size: 26px;}
+		#contato h2 {font-size: 18px;}
+		.separador_footer {display: none;}
+	}
+
+}
+
+@media screen and (max-width: 1200px) { 
+
+	@media screen and (max-width: 992px) {
+
+	}
+
+	@media screen and (width: 800px) {
+
+	}
+}
+
+@media screen and (width: 1024px) {
+	#slider .carousel-caption {
+		bottom: 33%;
+	}
+
+	.solicite_consulta {
+		top: 40%;
+	}
+
+	.noticia_item .data {
+		padding-left: 2%;
+	    padding-top: 3%;
+	    padding-bottom: 0%;
+	    padding-right: 2%;
+	}
+
+	#equipe .frame-content {
+		width: 425px;
+	    padding: 10px 30px 50px 50px;
+	    font-size: 13px;
+	    padding-right: 2% !important;		
+	}
+
+	#form_contato {
+		padding-bottom: 3%;
+	}
+
+	.separador_footer {
+		width: 5.5%;
+	}
+
+	footer .logo_footer img {
+		padding-top: 2%;
+	}
+}
+
+
+
